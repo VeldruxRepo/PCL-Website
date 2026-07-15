@@ -11,10 +11,10 @@ export function Header() {
       </div>
       <header className="site-header">
         <Container className="site-header__inner">
-          <a className="logo" href="#top" aria-label="PCL home"><span>P</span><span>C</span><span>L</span></a>
           <nav aria-label="Primary navigation">
             {data.navigation.map((item) => <a key={item.label} href={item.href}>{item.label}</a>)}
           </nav>
+          <a className="logo" href="#top" aria-label="Post Click Lab home"><span>Post</span><span>Click</span><span>Lab</span></a>
           <a className="button button--dark header-cta" href="#contact">Book a Call <Arrow /></a>
         </Container>
       </header>

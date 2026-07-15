@@ -109,63 +109,79 @@
 }
 
 .initial-loader__wordmark-block {
+  --wordmark-size: clamp(118px, 18vw, 280px);
+  --wordmark-width: calc(var(--wordmark-size) * 2.62);
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: clamp(14px, 1.45vw, 22px);
 }
 
 .initial-loader__wordmark {
   position: relative;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  font-size: clamp(118px, 18vw, 280px);
+  width: var(--wordmark-width);
+  height: calc(var(--wordmark-size) * 0.86);
+  font-size: var(--wordmark-size);
   font-weight: 600;
   line-height: 0.82;
-  letter-spacing: -0.085em;
+  letter-spacing: 0;
   white-space: nowrap;
 }
 
 .initial-loader__letter {
-  position: relative;
-  display: inline-block;
+  --letter-x: 50%;
+  --letter-y: 50%;
+
+  position: absolute;
+  left: var(--letter-x);
+  top: var(--letter-y);
+  display: grid;
+  place-items: center;
   color: var(--loader-ink);
   line-height: inherit;
   opacity: 0;
-  transform: translateY(34px);
+  transform: translate(-50%, calc(-50% + 34px));
   animation: initialLoaderLetterIn 780ms var(--loader-ease) forwards;
 }
 
 .initial-loader__p {
+  --letter-x: 16.7%;
+  --letter-y: 50.5%;
+
   animation-delay: 420ms;
 }
 
 .initial-loader__l {
+  --letter-x: 83.8%;
+  --letter-y: 50.5%;
+
   animation-delay: 980ms;
 }
 
 .initial-loader__c-wrap {
-  position: relative;
-  display: inline-flex;
-  align-items: baseline;
-  justify-content: center;
-  width: 0.78em;
-  height: auto;
-  margin: 0 0.01em -0.02em 0;
+  position: absolute;
+  left: 50.6%;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 0.82em;
+  height: 0.82em;
+  margin: 0;
   line-height: inherit;
-  vertical-align: baseline;
+  transform: translate(-50%, -50%);
 }
 
 .initial-loader__c-final {
   position: relative;
-  display: inline-block;
+  display: grid;
+  place-items: center;
   color: var(--loader-orange);
   line-height: inherit;
   opacity: 0;
-  transform: scale(0.94);
-  transform-origin: center bottom;
+  transform: translateY(0.012em) scale(0.94);
+  transform-origin: center;
   animation: initialLoaderFinalCIn 520ms var(--loader-ease) 1850ms forwards;
 }
 
@@ -177,7 +193,7 @@
   height: 112%;
   overflow: visible;
   opacity: 0;
-  transform: translate(-50%, -50%) rotate(-16deg) scale(0.92);
+  transform: translate(-50%, -50%) rotate(-12deg) scale(0.9);
   animation:
     initialLoaderCSketchIn 300ms ease 760ms forwards,
     initialLoaderCSketchOut 420ms var(--loader-ease) 1760ms forwards;
@@ -204,8 +220,8 @@
 
 .initial-loader__spark {
   position: absolute;
-  right: -0.04em;
-  top: 50%;
+  right: -0.02em;
+  top: 49%;
   width: 0.09em;
   height: 0.09em;
   border-radius: 50%;
@@ -217,9 +233,12 @@
 
 .initial-loader__subtitle {
   margin: 0;
+  width: min(var(--wordmark-width), 82vw);
   font-size: clamp(10px, 1vw, 13px);
   font-weight: 700;
   letter-spacing: 0.28em;
+  text-align: center;
+  text-indent: 0.28em;
   text-transform: uppercase;
   opacity: 0;
   transform: translateY(10px);
@@ -275,7 +294,7 @@
 @keyframes initialLoaderLetterIn {
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -307,17 +326,17 @@
 @keyframes initialLoaderFinalCIn {
   0% {
     opacity: 0;
-    transform: scale(0.94);
+    transform: translateY(0.012em) scale(0.94);
   }
 
   65% {
     opacity: 1;
-    transform: scale(1.035);
+    transform: translateY(0.012em) scale(1.02);
   }
 
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0.012em) scale(1);
   }
 }
 
@@ -369,10 +388,6 @@
   .initial-loader {
     padding: 18px;
   }
-  .initial-loader__subtitle{
-      position: relative;
-  left: 1px;
-  }
 
   .initial-loader__progress {
     right: 18px;
@@ -389,8 +404,9 @@
     display: none;
   }
 
-  .initial-loader__wordmark {
-    font-size: clamp(92px, 28vw, 160px);
+  .initial-loader__wordmark-block {
+    --wordmark-size: clamp(92px, 28vw, 160px);
+    --wordmark-width: min(calc(var(--wordmark-size) * 2.62), 86vw);
   }
 }
 
