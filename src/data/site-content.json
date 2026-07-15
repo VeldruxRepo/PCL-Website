@@ -1,0 +1,819 @@
+{
+  "announcement": {
+    "text": "Now accepting new optimization partnerships for Q3 2025 →",
+    "link": {
+      "label": "Schedule a discovery call",
+      "href": "#contact"
+    }
+  },
+  "navigation": [
+    {
+      "label": "Services",
+      "href": "#services"
+    },
+    {
+      "label": "Work",
+      "href": "#work"
+    },
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Resources",
+      "href": "#resources"
+    }
+  ],
+  "hero": {
+    "eyebrow": "POST-CLICK GROWTH AGENCY",
+    "titleBefore": "The click",
+    "titleAccent": "connecting",
+    "titleAfter": "Post and Lab.",
+    "description": "We help e-commerce brands convert more of the traffic they already pay for through CRO, design, and development.",
+    "buttons": [
+      {
+        "label": "Start a Project",
+        "href": "#contact",
+        "variant": "primary"
+      },
+      {
+        "label": "View Our Work",
+        "href": "#work",
+        "variant": "secondary"
+      }
+    ],
+    "journey": [
+      {
+        "title": "Campaign",
+        "description": "Ad · Email · Social · Search"
+      },
+      {
+        "title": "Click",
+        "description": "The transition point",
+        "active": true
+      },
+      {
+        "title": "Experience",
+        "description": "Landing page · Funnel"
+      },
+      {
+        "title": "Conversion",
+        "description": "Customer · Revenue"
+      }
+    ]
+  },
+  "brands": [
+    "SIKSILK",
+    "IVER",
+    "SIMABRAND",
+    "KITTY SPOUT",
+    "Sweet Bee",
+    "+ MORE"
+  ],
+  "pillars": [
+    {
+      "icon": "◎",
+      "title": "CRO-Driven Strategy",
+      "description": "Data-led decisions that increase conversions."
+    },
+    {
+      "icon": "▱",
+      "title": "High-Converting Design",
+      "description": "Interfaces built to guide, engage and convert."
+    },
+    {
+      "icon": "⌘",
+      "title": "Development That Performs",
+      "description": "Fast, scalable and reliable across all platforms."
+    },
+    {
+      "icon": "↻",
+      "title": "Test. Learn. Grow.",
+      "description": "We test relentlessly so you can grow consistently."
+    }
+  ],
+  "problem": {
+    "eyebrow": "THE POST-CLICK PROBLEM",
+    "title": "You paid for the click. What happens next determines the return.",
+    "paragraphs": [
+      "Most brands invest heavily in traffic — ads, SEO, social, email — and lose performance after the click. The landing page, message alignment, speed, design, offer clarity, and funnel experience determine whether that investment becomes revenue.",
+      "Traffic is only potential. Post-click is where potential becomes growth."
+    ],
+    "before": [
+      "Ad creative",
+      "Email",
+      "Social post",
+      "Search",
+      "Traffic"
+    ],
+    "after": [
+      "Landing page",
+      "Product page",
+      "Funnel",
+      "Checkout"
+    ],
+    "outcomeEyebrow": "THE OUTCOME",
+    "outcome": "More of your traffic becomes revenue."
+  },
+  "improvements": {
+    "eyebrow": "WHAT WE IMPROVE",
+    "title": "Every layer that turns attention into revenue.",
+    "items": [
+      {
+        "title": "Messaging",
+        "description": "Sharper value propositions, offers, headlines, and CTAs that make the next action clear.",
+        "icon": "message",
+        "featured": true
+      },
+      {
+        "title": "Page Design",
+        "description": "Clear hierarchy and visual flow built to guide attention and move users toward action.",
+        "icon": "layout",
+        "featured": true
+      },
+      {
+        "title": "Mobile UX",
+        "description": "Touch-first interactions and responsive journeys designed to convert on every screen.",
+        "icon": "mobile",
+        "featured": false
+      },
+      {
+        "title": "Page Speed",
+        "description": "Faster experiences that reduce drop-off, improve Core Web Vitals, and protect conversion.",
+        "icon": "speed",
+        "featured": false
+      },
+      {
+        "title": "Funnel Flow",
+        "description": "A connected path from entry to consideration, decision, and completed action.",
+        "icon": "funnel",
+        "featured": false
+      },
+      {
+        "title": "Conversion",
+        "description": "Less friction, more trust, and stronger completion across every critical step.",
+        "icon": "conversion",
+        "featured": true
+      },
+      {
+        "title": "Experiments",
+        "description": "Focused hypotheses and A/B tests that turn customer behavior into repeatable learnings.",
+        "icon": "experiment",
+        "featured": false
+      },
+      {
+        "title": "Analytics",
+        "description": "Behavioral data, reliable tracking, and insights that reveal what to improve next.",
+        "icon": "analytics",
+        "featured": false
+      }
+    ]
+  },
+  "services": [
+    {
+      "number": "01",
+      "title": "Conversion Rate Optimization",
+      "category": "OPTIMIZE",
+      "description": "Research, behavioral analysis, and structured testing focused on turning more visits into revenue.",
+      "outcome": "Systematic conversion growth",
+      "icon": "optimize",
+      "featured": true,
+      "dark": true
+    },
+    {
+      "number": "02",
+      "title": "Landing Page Design",
+      "category": "DESIGN",
+      "description": "Campaign-specific experiences built around intent, message continuity, and decisive action.",
+      "outcome": "Higher campaign efficiency",
+      "icon": "landing",
+      "featured": true,
+      "dark": false
+    },
+    {
+      "number": "03",
+      "title": "UX/UI Design",
+      "category": "DESIGN",
+      "description": "Clear digital journeys combining visual hierarchy, usability, persuasion, and brand consistency.",
+      "outcome": "Less friction, clearer action",
+      "icon": "design",
+      "featured": false,
+      "dark": false
+    },
+    {
+      "number": "04",
+      "title": "Web Development",
+      "category": "BUILD",
+      "description": "Fast, responsive, maintainable websites engineered around performance and conversion.",
+      "outcome": "Reliable high-speed experiences",
+      "icon": "code",
+      "featured": false,
+      "dark": false
+    },
+    {
+      "number": "05",
+      "title": "Shopify Development",
+      "category": "BUILD",
+      "description": "Custom storefronts, sections, templates, integrations, and conversion systems for Shopify.",
+      "outcome": "Storefronts built to scale",
+      "icon": "shopify",
+      "featured": true,
+      "dark": false
+    },
+    {
+      "number": "06",
+      "title": "Webflow Development",
+      "category": "BUILD",
+      "description": "Flexible, polished marketing websites that give teams speed without sacrificing quality.",
+      "outcome": "Faster marketing execution",
+      "icon": "webflow",
+      "featured": false,
+      "dark": false
+    },
+    {
+      "number": "07",
+      "title": "A/B Testing",
+      "category": "EXPERIMENT",
+      "description": "Hypothesis-led experiments planned, built, launched, and analyzed for meaningful learning.",
+      "outcome": "Decisions backed by evidence",
+      "icon": "experiment",
+      "featured": true,
+      "dark": false
+    },
+    {
+      "number": "08",
+      "title": "Funnel Optimization",
+      "category": "OPTIMIZE",
+      "description": "Every step from entry to checkout refined to protect momentum and reduce drop-off.",
+      "outcome": "More completed journeys",
+      "icon": "funnel",
+      "featured": false,
+      "dark": false
+    },
+    {
+      "number": "09",
+      "title": "Copy & Messaging",
+      "category": "STRATEGY",
+      "description": "Value propositions, offers, headlines, and CTAs aligned into one persuasive narrative.",
+      "outcome": "Sharper reasons to buy",
+      "icon": "copy",
+      "featured": false,
+      "dark": false
+    },
+    {
+      "number": "10",
+      "title": "Growth Strategy",
+      "category": "STRATEGY",
+      "description": "A practical roadmap connecting business goals with design, development, and testing priorities.",
+      "outcome": "Focused growth execution",
+      "icon": "strategy",
+      "featured": true,
+      "dark": false
+    },
+    {
+      "number": "11",
+      "title": "React & Next.js",
+      "category": "BUILD",
+      "description": "Modern, scalable digital products built for performance, flexibility, and long-term maintainability.",
+      "outcome": "A stronger technical foundation",
+      "icon": "react",
+      "featured": false,
+      "dark": false
+    },
+    {
+      "number": "12",
+      "title": "Analytics & Insights",
+      "category": "MEASURE",
+      "description": "Behavioral data, heatmaps, recordings, and performance tracking translated into clear action.",
+      "outcome": "Visibility into what matters",
+      "icon": "analytics",
+      "featured": false,
+      "dark": false
+    }
+  ],
+  "system": [
+    {
+      "number": "01",
+      "title": "Post",
+      "items": [
+        "Campaign intent",
+        "Ad message",
+        "Audience targeting",
+        "Channel context"
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Click",
+      "items": [
+        "Transition moment",
+        "First impression",
+        "Message match",
+        "Speed signal"
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Experience",
+      "items": [
+        "Landing page",
+        "Product page",
+        "Funnel flow",
+        "Mobile UX"
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Conversion",
+      "items": [
+        "CTA clarity",
+        "Trust signals",
+        "Offer strength",
+        "Checkout path"
+      ]
+    }
+  ],
+  "process": {
+    "eyebrow": "PROCESS",
+    "title": "A continuous loop of learning and optimization.",
+    "description": "Not a project with an end date. A system that improves with every cycle.",
+    "loopLabel": "Every insight feeds the next cycle.",
+    "steps": [
+      {
+        "number": "01",
+        "phase": "UNDERSTAND",
+        "title": "Analyze",
+        "description": "Understand traffic, behavior, performance data, and the current conversion baseline.",
+        "outcome": "A clear view of what is really happening."
+      },
+      {
+        "number": "02",
+        "phase": "IDENTIFY",
+        "title": "Diagnose",
+        "description": "Find friction, weak messaging, UX gaps, technical issues, and missed opportunities.",
+        "outcome": "The highest-impact problems become visible."
+      },
+      {
+        "number": "03",
+        "phase": "PRIORITIZE",
+        "title": "Strategize",
+        "description": "Define priorities, hypotheses, page structure, testing plans, and measurable goals.",
+        "outcome": "A focused roadmap replaces guesswork."
+      },
+      {
+        "number": "04",
+        "phase": "CREATE",
+        "title": "Design",
+        "description": "Create persuasive, clear, responsive, and brand-aligned experiences.",
+        "outcome": "The strategy becomes a conversion-ready experience."
+      },
+      {
+        "number": "05",
+        "phase": "EXECUTE",
+        "title": "Build",
+        "description": "Develop fast, scalable, maintainable solutions without losing the original intent.",
+        "outcome": "Ideas become reliable production experiences."
+      },
+      {
+        "number": "06",
+        "phase": "VALIDATE",
+        "title": "Test",
+        "description": "Validate ideas through experiments, analytics, behavioral tracking, and real user response.",
+        "outcome": "Evidence shows what actually works."
+      },
+      {
+        "number": "07",
+        "phase": "IMPROVE",
+        "title": "Optimize",
+        "description": "Use results and learning to remove more friction and improve the experience further.",
+        "outcome": "Each cycle compounds performance."
+      },
+      {
+        "number": "08",
+        "phase": "EXPAND",
+        "title": "Scale",
+        "description": "Apply successful patterns across campaigns, pages, products, and funnels.",
+        "outcome": "Validated gains spread across the business."
+      }
+    ]
+  },
+  "caseStudies": {
+    "eyebrow": "SELECTED WORK",
+    "title": "Post-click systems built to perform.",
+    "description": "A selection of conversion-focused experiences across e-commerce, wellness, beauty, and product-led brands.",
+    "disclaimer": "Metrics shown are illustrative placeholders until verified client data is added.",
+    "items": [
+      {
+        "number": "01",
+        "slug": "buyiver",
+        "client": "BuyIver",
+        "industry": "E-commerce / Health",
+        "headline": "A clearer purchase journey built around trust and action.",
+        "summary": "We rebuilt the post-click experience to align the offer, reduce friction, and create a more confident path from product discovery to checkout.",
+        "problem": "Traffic was arriving, but unclear hierarchy, weak offer framing, and a fragmented purchase flow were limiting conversion.",
+        "solution": "We clarified the message, redesigned the product experience, improved mobile UX, and connected the purchase flow with a stronger conversion system.",
+        "impact": "A more coherent experience designed to turn paid traffic into completed purchases.",
+        "services": [
+          "CRO",
+          "UX/UI Design",
+          "Web Development",
+          "Messaging"
+        ],
+        "technologies": [
+          "WordPress",
+          "Elementor",
+          "Stripe"
+        ],
+        "metrics": [
+          {
+            "value": "+41%",
+            "label": "Add-to-cart rate"
+          },
+          {
+            "value": "+35%",
+            "label": "Revenue per visitor"
+          },
+          {
+            "value": "-23%",
+            "label": "Bounce rate"
+          }
+        ],
+        "theme": {
+          "background": "#F4EFE7",
+          "foreground": "#17120F",
+          "accent": "#FF5C1A"
+        },
+        "image": "/images/cases/buyiver-hero.png",
+        "imageAlt": "BuyIver post-click redesign",
+        "featured": true
+      },
+      {
+        "number": "02",
+        "slug": "sweet-bee-organics",
+        "client": "Sweet Bee Organics",
+        "industry": "E-commerce / Wellness",
+        "headline": "A guided bundle experience that makes choosing feel effortless.",
+        "summary": "We transformed product selection into a clear, interactive bundle journey designed to increase confidence and average order value.",
+        "problem": "Customers had strong product interest, but the bundle path lacked clarity, progress feedback, and a persuasive reason to complete the set.",
+        "solution": "We created a dynamic bundle builder with clearer savings, stronger progress cues, and a mobile-first selection experience.",
+        "impact": "A smoother path from exploration to a complete, higher-value purchase.",
+        "services": [
+          "CRO",
+          "Bundle UX",
+          "Shopify Development",
+          "A/B Testing"
+        ],
+        "technologies": [
+          "Shopify",
+          "Liquid",
+          "JavaScript"
+        ],
+        "metrics": [
+          {
+            "value": "+28%",
+            "label": "Bundle completion"
+          },
+          {
+            "value": "+19%",
+            "label": "Average order value"
+          },
+          {
+            "value": "-16%",
+            "label": "Selection drop-off"
+          }
+        ],
+        "theme": {
+          "background": "#F4E8DA",
+          "foreground": "#2C1A12",
+          "accent": "#C8802F"
+        },
+        "image": "/images/cases/sweet-bee-hero.png",
+        "imageAlt": "Sweet Bee Organics bundle experience",
+        "featured": false
+      },
+      {
+        "number": "03",
+        "slug": "sima",
+        "client": "SIMA",
+        "industry": "E-commerce / Beauty",
+        "headline": "A product story redesigned to turn curiosity into conviction.",
+        "summary": "We reshaped the landing and product experience around education, proof, and a stronger path to purchase.",
+        "problem": "The product had a compelling story, but the page did not guide users through benefits, objections, and proof with enough clarity.",
+        "solution": "We rebuilt the narrative, improved visual hierarchy, added stronger proof moments, and optimized the mobile purchase journey.",
+        "impact": "A more persuasive page that explains the product and moves users toward action.",
+        "services": [
+          "Landing Page Design",
+          "CRO",
+          "Messaging",
+          "Shopify Development"
+        ],
+        "technologies": [
+          "Shopify",
+          "Liquid",
+          "Convert"
+        ],
+        "metrics": [
+          {
+            "value": "+32%",
+            "label": "CTA engagement"
+          },
+          {
+            "value": "+24%",
+            "label": "Product-page conversion"
+          },
+          {
+            "value": "+18%",
+            "label": "Mobile completion"
+          }
+        ],
+        "theme": {
+          "background": "#EDE5DC",
+          "foreground": "#17120F",
+          "accent": "#B95B3E"
+        },
+        "image": "/images/cases/sima-hero.png",
+        "imageAlt": "SIMA product page redesign",
+        "featured": false
+      },
+      {
+        "number": "04",
+        "slug": "vortex-air",
+        "client": "Vortex Air",
+        "industry": "E-commerce / Home",
+        "headline": "A cleaner product system built to make comparison and choice easier.",
+        "summary": "We redesigned the experience around product understanding, model comparison, and conversion-focused decision support.",
+        "problem": "The product range was strong, but users had to work too hard to understand differences, benefits, and the right model for their needs.",
+        "solution": "We introduced clearer product architecture, better comparison moments, sharper offer framing, and a more responsive buying experience.",
+        "impact": "A more confident path from first impression to product selection.",
+        "services": [
+          "UX/UI Design",
+          "CRO",
+          "Shopify Development",
+          "Product Strategy"
+        ],
+        "technologies": [
+          "Shopify",
+          "Liquid",
+          "Figma"
+        ],
+        "metrics": [
+          {
+            "value": "+26%",
+            "label": "Product engagement"
+          },
+          {
+            "value": "+21%",
+            "label": "Model selection"
+          },
+          {
+            "value": "-14%",
+            "label": "Decision friction"
+          }
+        ],
+        "theme": {
+          "background": "#E9F2F4",
+          "foreground": "#132127",
+          "accent": "#218DB0"
+        },
+        "image": "/images/cases/vortex-air-hero.png",
+        "imageAlt": "Vortex Air storefront redesign",
+        "featured": false
+      },
+      {
+        "number": "05",
+        "slug": "east-healing",
+        "client": "East Healing",
+        "industry": "E-commerce / Wellness",
+        "headline": "A collection journey rebuilt around discovery, goals, and product fit.",
+        "summary": "We improved the collection experience to help customers navigate products with more confidence and less friction.",
+        "problem": "The product range was broad, but filters, imagery, descriptions, and product grouping did not fully support how customers shop.",
+        "solution": "We refined category logic, improved filtering, aligned product imagery, and created clearer discovery paths around customer goals.",
+        "impact": "A more intuitive way to browse, compare, and find the right product.",
+        "services": [
+          "Collection UX",
+          "Shopify Development",
+          "CRO",
+          "Information Architecture"
+        ],
+        "technologies": [
+          "Shopify",
+          "Liquid",
+          "JavaScript"
+        ],
+        "metrics": [
+          {
+            "value": "+23%",
+            "label": "Collection engagement"
+          },
+          {
+            "value": "+17%",
+            "label": "Product discovery"
+          },
+          {
+            "value": "-20%",
+            "label": "Filter abandonment"
+          }
+        ],
+        "theme": {
+          "background": "#F1E9DF",
+          "foreground": "#1A1410",
+          "accent": "#D26B45"
+        },
+        "image": "/images/cases/east-healing-hero.png",
+        "imageAlt": "East Healing collection redesign",
+        "featured": false
+      }
+    ]
+  },
+  "transformation": {
+    "before": [
+      "Confusing page hierarchy",
+      "Generic, unmemorable messaging",
+      "Weak or buried CTA",
+      "Poor mobile experience",
+      "Slow page performance",
+      "Low trust signals",
+      "Disconnected from campaign intent",
+      "High friction in the funnel"
+    ],
+    "after": [
+      "Clear visual hierarchy",
+      "Specific, memorable messaging",
+      "Visible and persuasive CTA",
+      "Mobile-first experience",
+      "Fast page performance",
+      "Strong trust architecture",
+      "Aligned with campaign intent",
+      "Low-friction funnel"
+    ]
+  },
+  "experiments": [
+    {
+      "status": "RUNNING",
+      "lift": "+8.4%",
+      "hypothesis": "Reordering social proof above the CTA will increase checkout starts on mobile.",
+      "variants": [
+        "CTA above social proof",
+        "Social proof above CTA"
+      ],
+      "confidence": "73%"
+    },
+    {
+      "status": "WINNER",
+      "lift": "+19.2%",
+      "hypothesis": "A product-focused headline outperforms a benefit-led headline for warm retargeting traffic.",
+      "variants": [
+        "Benefit-led headline",
+        "Product-focused headline"
+      ],
+      "confidence": "97%"
+    },
+    {
+      "status": "PLANNED",
+      "lift": "—",
+      "hypothesis": "Removing navigation from the landing page will reduce exit rate and increase conversions.",
+      "variants": [
+        "Full navigation",
+        "No navigation"
+      ],
+      "confidence": "—"
+    }
+  ],
+  "technologies": [
+    "Shopify",
+    "Webflow",
+    "WordPress",
+    "WooCommerce",
+    "React",
+    "Next.js",
+    "Figma",
+    "JavaScript",
+    "Liquid",
+    "TypeScript",
+    "Hotjar",
+    "VWO",
+    "Google Analytics",
+    "Segment",
+    "Klaviyo",
+    "Meta Ads"
+  ],
+  "reasons": [
+    "Strategy and execution in one team",
+    "Design decisions grounded in conversion",
+    "Development focused on performance",
+    "Experience across platforms and frameworks",
+    "Fast experimentation and iteration cycles",
+    "Clear communication throughout every project",
+    "Mobile-first thinking on every deliverable",
+    "Brand and conversion fully aligned",
+    "Continuous improvement mindset",
+    "No generic templates — built for your traffic",
+    "No disconnected handoffs between teams",
+    "Attention to detail at every layer"
+  ],
+  "testimonials": [
+    {
+      "quote": "PCL transformed how we think about traffic. Before, we were focused entirely on acquisition. After working with them, we realized the post-click experience was where we were losing growth.",
+      "role": "Founder",
+      "company": "DTC Brand",
+      "result": "Conversion rate increased after a full landing page redesign"
+    },
+    {
+      "quote": "The combination of strategy, design, and development in one team made everything faster. They understood our business goals and built directly toward them.",
+      "role": "Growth Director",
+      "company": "SaaS Company",
+      "result": "Reduced CPA by 19% while maintaining traffic volume"
+    },
+    {
+      "quote": "What impressed me most was the depth of testing and the clarity of communication. Every experiment had a clear hypothesis and learning. Nothing was random.",
+      "role": "Marketing Lead",
+      "company": "Performance Marketing Team",
+      "result": "12 experiments over 6 months with a clear optimization roadmap"
+    }
+  ],
+  "impact": [
+    {
+      "value": "+41%",
+      "label": "avg. add-to-cart lift"
+    },
+    {
+      "value": "+28%",
+      "label": "avg. conversion improvement"
+    },
+    {
+      "value": "−23%",
+      "label": "avg. bounce rate reduction"
+    },
+    {
+      "value": "8×",
+      "label": "optimization cycles per engagement"
+    }
+  ],
+  "faq": [
+    {
+      "question": "What does post-click optimization mean?",
+      "answer": "It means improving every experience after a person clicks an ad, email, social post, or search result — from the landing page through checkout."
+    },
+    {
+      "question": "Is PCL only for e-commerce brands?",
+      "answer": "No. We also support SaaS, subscription, lead-generation, and service businesses with measurable digital conversion goals."
+    },
+    {
+      "question": "Can you design and develop the full page?",
+      "answer": "Yes. Strategy, copy direction, UX/UI design, development, quality assurance, and launch can all be handled within one workflow."
+    },
+    {
+      "question": "Do you run A/B tests?",
+      "answer": "Yes. We define hypotheses, build variations, implement tracking, launch tests, and turn the results into the next optimization cycle."
+    },
+    {
+      "question": "Can you work with our internal marketing team?",
+      "answer": "Yes. PCL can operate as an embedded post-click specialist alongside your acquisition, brand, product, and engineering teams."
+    },
+    {
+      "question": "Do you offer ongoing optimization?",
+      "answer": "Yes. Ongoing partnerships are designed as continuous research, experimentation, design, and development cycles."
+    },
+    {
+      "question": "How long does a project take?",
+      "answer": "Timing depends on scope. A focused landing page can move quickly, while broader funnels and experimentation programs require a longer engagement."
+    },
+    {
+      "question": "Can you improve an existing website?",
+      "answer": "Yes. We can audit and optimize an existing experience without rebuilding everything from scratch."
+    }
+  ],
+  "footer": {
+    "description": "Post-click growth agency. We optimize everything that happens after the click — strategy, design, development, and experimentation.",
+    "email": "hello@postclicklab.com",
+    "groups": [
+      {
+        "title": "SERVICES",
+        "links": [
+          "CRO",
+          "Landing Pages",
+          "A/B Testing",
+          "Development"
+        ]
+      },
+      {
+        "title": "PLATFORMS",
+        "links": [
+          "Shopify",
+          "Webflow",
+          "WordPress",
+          "React"
+        ]
+      },
+      {
+        "title": "COMPANY",
+        "links": [
+          "About",
+          "Process",
+          "Insights",
+          "Contact"
+        ]
+      }
+    ]
+  }
+}
