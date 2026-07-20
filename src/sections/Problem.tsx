@@ -29,7 +29,7 @@ export function Problem() {
 
           <div className="problem__cards">
             <article>
-              <span className="eyebrow">BEFORE THE CLICK</span>
+              <span className="eyebrow">BEFORE PCL</span>
 
               {data.problem.before.map((item) => (
                 <p key={item}>{item}</p>
@@ -41,7 +41,7 @@ export function Problem() {
             </span>
 
             <article className="problem__card--accent">
-              <span className="eyebrow">AFTER THE CLICK</span>
+              <span className="eyebrow">AFTER PCL</span>
 
               {data.problem.after.map((item) => (
                 <p key={item}>{item}</p>

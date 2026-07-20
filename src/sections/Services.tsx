@@ -7,6 +7,15 @@ type ServiceIconProps = {
 };
 
 function ServiceIcon({ name }: ServiceIconProps) {
+  const logoSrc: Record<string, string> = {
+    shopify: "/images/shopify.svg",
+    webflow: "/images/webflow-logo.webp",
+  };
+
+  if (logoSrc[name]) {
+    return <img src={logoSrc[name]} alt="" aria-hidden="true" />;
+  }
+
   const commonProps = {
     width: 24,
     height: 24,
@@ -46,19 +55,6 @@ function ServiceIcon({ name }: ServiceIconProps) {
         <path d="M9 7l-5 5 5 5" />
         <path d="M15 7l5 5-5 5" />
         <path d="M13 4l-2 16" />
-      </>
-    ),
-    shopify: (
-      <>
-        <path d="M6 8h12l-1 12H7L6 8z" />
-        <path d="M9 8V6a3 3 0 016 0v2" />
-        <path d="M10 13c1.3-1 3.6-.8 4.4.4.8 1.3-.1 3-2.4 3.2-1.1.1-2-.2-2.6-.7" />
-      </>
-    ),
-    webflow: (
-      <>
-        <path d="M3 7l4 10 4-7 3 7 7-10" />
-        <path d="M7 17h10" />
       </>
     ),
     experiment: (
@@ -119,18 +115,15 @@ export function Services() {
             <span className="eyebrow eyebrow--accent">SERVICES</span>
 
             <h2>
-              Everything your
-              <br />
-              <em>post-click growth</em>
-              <br />
-              system needs.
+              Everything your <em>post-click growth</em> system needs.
             </h2>
           </div>
 
           <div className="services__intro">
             <p>
-              Strategy, design, development, and experimentation working as one
-              connected system—not disconnected deliverables.
+              Strategy, design, development, testing, and smart AI-assisted
+              research working as one conversion system—not disconnected
+              deliverables.
             </p>
 
             <a className="button button--primary" href="#contact">

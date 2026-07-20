@@ -9,7 +9,7 @@ type InitialLoaderProps = {
 const pad = (value: number) => String(value).padStart(3, "0");
 
 export function InitialLoader({
-  duration = 3200,
+  duration = 2100,
   onComplete,
 }: InitialLoaderProps) {
   const [counter, setCounter] = useState(0);
@@ -91,16 +91,8 @@ export function InitialLoader({
             <span className="initial-loader__letter initial-loader__p">P</span>
 
             <span className="initial-loader__c-wrap">
-              <svg
-                className="initial-loader__c-draw"
-                viewBox="0 0 160 160"
-                aria-hidden="true"
-              >
-                <circle cx="80" cy="80" r="56" />
-                <path d="M126 43C111 24 89 16 68 21" />
-              </svg>
-
               <span className="initial-loader__c-final">C</span>
+              <span className="initial-loader__c-scan" />
               <span className="initial-loader__spark" />
             </span>
 

@@ -1,6 +1,6 @@
 {
   "announcement": {
-    "text": "Now accepting new optimization partnerships for Q3 2025 →",
+    "text": "Post-click growth systems built for conversion →",
     "link": {
       "label": "Schedule a discovery call",
       "href": "#contact"
@@ -13,7 +13,7 @@
     },
     {
       "label": "Work",
-      "href": "#work"
+      "href": "/work"
     },
     {
       "label": "About",
@@ -29,7 +29,7 @@
     "titleBefore": "The click",
     "titleAccent": "connecting",
     "titleAfter": "Post and Lab.",
-    "description": "We help e-commerce brands convert more of the traffic they already pay for through CRO, design, and development.",
+    "description": "We help e-commerce brands convert more of the traffic they already pay for through CRO, design, development, and experimentation.",
     "buttons": [
       {
         "label": "Start a Project",
@@ -54,7 +54,7 @@
       },
       {
         "title": "Experience",
-        "description": "Landing page · Funnel"
+        "description": "Message · Page · Funnel"
       },
       {
         "title": "Conversion",
@@ -63,54 +63,54 @@
     ]
   },
   "brands": [
-    "SIKSILK",
     "IVER",
-    "SIMABRAND",
-    "KITTY SPOUT",
-    "Sweet Bee",
-    "+ MORE"
+    "ClickNShip",
+    "Ascense",
+    "IVERUSA",
+    "Veganic"
   ],
   "pillars": [
     {
       "icon": "◎",
       "title": "CRO-Driven Strategy",
-      "description": "Data-led decisions that increase conversions."
+      "description": "Data-led decisions, AI-assisted research, and sharper priorities that increase conversions."
     },
     {
       "icon": "▱",
-      "title": "High-Converting Design",
-      "description": "Interfaces built to guide, engage and convert."
+      "title": "Post-Click Design",
+      "description": "Pages and funnels that continue the promise made before the click."
     },
     {
       "icon": "⌘",
-      "title": "Development That Performs",
-      "description": "Fast, scalable and reliable across all platforms."
+      "title": "Performance Build",
+      "description": "Fast, reliable experiences engineered to preserve buying intent."
     },
     {
       "icon": "↻",
-      "title": "Test. Learn. Grow.",
-      "description": "We test relentlessly so you can grow consistently."
+      "title": "Test. Learn. Scale.",
+      "description": "Experiments turn AI-assisted ideas into proven conversion gains."
     }
   ],
   "problem": {
-    "eyebrow": "THE POST-CLICK PROBLEM",
-    "title": "You paid for the click. What happens next determines the return.",
+    "eyebrow": "THE POST-CLICK OPPORTUNITY",
+    "title": "The click is expensive. The post-click experience decides if it pays back.",
     "paragraphs": [
-      "Most brands invest heavily in traffic — ads, SEO, social, email — and lose performance after the click. The landing page, message alignment, speed, design, offer clarity, and funnel experience determine whether that investment becomes revenue.",
-      "Traffic is only potential. Post-click is where potential becomes growth."
+      "Most brands invest heavily in traffic — ads, SEO, social, email, and now AI-assisted campaigns — then lose performance after the click. The page, message, offer, speed, trust, and checkout determine whether that attention becomes revenue.",
+      "AI is useful when you know how to use it. We use it to move faster and think wider, then filter everything through conversion strategy, UX, copy, development, and testing."
     ],
     "before": [
-      "Ad creative",
-      "Email",
-      "Social post",
-      "Search",
-      "Traffic"
+      "Traffic with no post-click strategy",
+      "AI-generated ideas without conversion logic",
+      "Campaign promise breaks on the page",
+      "Generic messaging and weak CTAs",
+      "Paid spend exposed to friction"
     ],
     "after": [
-      "Landing page",
-      "Product page",
-      "Funnel",
-      "Checkout"
+      "Post-click built for conversion",
+      "Optimized landing and product pages",
+      "A/B tests with clear hypotheses",
+      "Conversion diagnosis and priorities",
+      "Funnel improvements tied to revenue"
     ],
     "outcomeEyebrow": "THE OUTCOME",
     "outcome": "More of your traffic becomes revenue."
@@ -174,8 +174,8 @@
       "number": "01",
       "title": "Conversion Rate Optimization",
       "category": "OPTIMIZE",
-      "description": "Research, behavioral analysis, and structured testing focused on turning more visits into revenue.",
-      "outcome": "Systematic conversion growth",
+      "description": "Research, behavioral analysis, AI-assisted insight, and structured testing focused on turning more visits into revenue.",
+      "outcome": "Conversion priorities backed by data",
       "icon": "optimize",
       "featured": true,
       "dark": true
@@ -184,8 +184,8 @@
       "number": "02",
       "title": "Landing Page Design",
       "category": "DESIGN",
-      "description": "Campaign-specific experiences built around intent, message continuity, and decisive action.",
-      "outcome": "Higher campaign efficiency",
+      "description": "Campaign-specific experiences that carry the promise of the click into a persuasive buying journey.",
+      "outcome": "Stronger message match after the click",
       "icon": "landing",
       "featured": true,
       "dark": false
@@ -234,7 +234,7 @@
       "number": "07",
       "title": "A/B Testing",
       "category": "EXPERIMENT",
-      "description": "Hypothesis-led experiments planned, built, launched, and analyzed for meaningful learning.",
+      "description": "Hypothesis-led experiments planned, built, launched, and analyzed so ideas become evidence, not opinions.",
       "outcome": "Decisions backed by evidence",
       "icon": "experiment",
       "featured": true,
@@ -254,8 +254,8 @@
       "number": "09",
       "title": "Copy & Messaging",
       "category": "STRATEGY",
-      "description": "Value propositions, offers, headlines, and CTAs aligned into one persuasive narrative.",
-      "outcome": "Sharper reasons to buy",
+      "description": "Human-edited, AI-assisted messaging aligned with objections, intent, offers, and the action you need users to take.",
+      "outcome": "Sharper reasons to trust and buy",
       "icon": "copy",
       "featured": false,
       "dark": false
@@ -272,20 +272,10 @@
     },
     {
       "number": "11",
-      "title": "React & Next.js",
-      "category": "BUILD",
-      "description": "Modern, scalable digital products built for performance, flexibility, and long-term maintainability.",
-      "outcome": "A stronger technical foundation",
-      "icon": "react",
-      "featured": false,
-      "dark": false
-    },
-    {
-      "number": "12",
-      "title": "Analytics & Insights",
+      "title": "Conversion Diagnosis",
       "category": "MEASURE",
-      "description": "Behavioral data, heatmaps, recordings, and performance tracking translated into clear action.",
-      "outcome": "Visibility into what matters",
+      "description": "Behavioral data, heatmaps, recordings, and AI-assisted pattern analysis translated into a prioritized action plan.",
+      "outcome": "Clarity on what to fix first",
       "icon": "analytics",
       "featured": false,
       "dark": false
@@ -627,24 +617,24 @@
   },
   "transformation": {
     "before": [
-      "Confusing page hierarchy",
-      "Generic, unmemorable messaging",
-      "Weak or buried CTA",
-      "Poor mobile experience",
-      "Slow page performance",
-      "Low trust signals",
-      "Disconnected from campaign intent",
-      "High friction in the funnel"
+      "Traffic scaled without post-click strategy",
+      "Campaign promise breaks on the landing page",
+      "AI-assisted copy used without judgment",
+      "CTA buried behind friction and hesitation",
+      "Mobile journeys that leak high-intent traffic",
+      "Weak proof, weak trust, weak buying confidence",
+      "Testing focused on opinions instead of revenue",
+      "Paid traffic scaling into preventable drop-off"
     ],
     "after": [
-      "Clear visual hierarchy",
-      "Specific, memorable messaging",
-      "Visible and persuasive CTA",
-      "Mobile-first experience",
-      "Fast page performance",
-      "Strong trust architecture",
-      "Aligned with campaign intent",
-      "Low-friction funnel"
+      "Post-click journey built for conversion",
+      "Optimized pages aligned with campaign intent",
+      "A/B tests with strong hypotheses and clean tracking",
+      "Conversion diagnosis with clear priorities",
+      "Sharper offers, CTAs, and page hierarchy",
+      "Mobile-first flows that protect buying momentum",
+      "AI used properly to accelerate research and iteration",
+      "A system that turns traffic into measurable revenue"
     ]
   },
   "experiments": [
@@ -755,6 +745,10 @@
       "answer": "It means improving every experience after a person clicks an ad, email, social post, or search result — from the landing page through checkout."
     },
     {
+      "question": "Do you use AI in the process?",
+      "answer": "Yes. We use AI for research, pattern detection, concept generation, copy exploration, and testing velocity. The difference is that every AI-assisted decision is filtered through conversion strategy, brand fit, user behavior, and measurable outcomes."
+    },
+    {
       "question": "Is PCL only for e-commerce brands?",
       "answer": "No. We also support SaaS, subscription, lead-generation, and service businesses with measurable digital conversion goals."
     },
@@ -784,7 +778,7 @@
     }
   ],
   "footer": {
-    "description": "Post-click growth agency. We optimize everything that happens after the click — strategy, design, development, and experimentation.",
+    "description": "Post-click growth agency. We optimize everything that happens after the click through strategy, design, development, experimentation, and smart use of AI where it improves conversion.",
     "email": "hello@postclicklab.com",
     "groups": [
       {
