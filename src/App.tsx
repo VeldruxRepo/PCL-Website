@@ -47,6 +47,11 @@ export default function App() {
     }
 
     const href = link.getAttribute("href");
+
+    if (link.target === "_blank") {
+      return;
+    }
+
     const label = link.textContent?.toLowerCase() ?? "";
     const shouldOpenContact =
       href === "#contact" ||
@@ -78,7 +83,10 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  const isWorkPage = currentPath === "/work";
+  const caseStudySlug = currentPath.startsWith("/case-studies/")
+    ? currentPath.split("/").filter(Boolean).at(-1)
+    : undefined;
+  const isWorkPage = currentPath === "/work" || Boolean(caseStudySlug);
 
   return (
     <>
@@ -97,7 +105,7 @@ export default function App() {
 
         {isWorkPage ? (
           <main className="work-page">
-            <CaseStudies />
+            <CaseStudies activeSlug={caseStudySlug} />
             <FinalCta />
           </main>
         ) : (

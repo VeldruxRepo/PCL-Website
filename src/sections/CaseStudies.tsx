@@ -5,17 +5,32 @@ import {
   useState,
   type CSSProperties,
 } from "react";
+import { createPortal } from "react-dom";
 
 import data from "../data/site-content.json";
 import { Arrow } from "../components/ui/Arrow";
 import { Container } from "../components/ui/Container";
+import {
+  getSelectedCaseIndexBySlug,
+  selectedCases,
+} from "../utils/selectedCases";
 
-export function CaseStudies() {
-  const [activeCase, setActiveCase] = useState(0);
+type CaseStudiesProps = {
+  activeSlug?: string;
+};
+
+export function CaseStudies({ activeSlug }: CaseStudiesProps) {
+  const [activeCase, setActiveCase] = useState(() =>
+    getSelectedCaseIndexBySlug(activeSlug),
+  );
+  const [imageViewer, setImageViewer] = useState<{
+    alt: string;
+    src: string;
+  } | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const caseRefs = useRef<Array<HTMLElement | null>>([]);
 
-  const currentCase = data.caseStudies.items[activeCase];
+  const currentCase = selectedCases[activeCase];
 
   const activeTheme = useMemo(() => {
     return {
@@ -67,12 +82,37 @@ export function CaseStudies() {
     return () => observer.disconnect();
   }, []);
 
-  const scrollToCase = (index: number) => {
-    caseRefs.current[index]?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
+  useEffect(() => {
+    if (!activeSlug) {
+      return;
+    }
+
+    const index = getSelectedCaseIndexBySlug(activeSlug);
+
+    window.requestAnimationFrame(() => {
+      setActiveCase(index);
+      caseRefs.current[index]?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     });
-  };
+  }, [activeSlug]);
+
+  useEffect(() => {
+    if (!imageViewer) {
+      return;
+    }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setImageViewer(null);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [imageViewer]);
 
   return (
     <section
@@ -97,22 +137,8 @@ export function CaseStudies() {
         </Container>
       </div>
 
-      <nav className="case-stack__nav" aria-label="Case studies">
-        {data.caseStudies.items.map((caseStudy, index) => (
-          <button
-            className={index === activeCase ? "is-active" : ""}
-            key={caseStudy.slug}
-            onClick={() => scrollToCase(index)}
-            type="button"
-          >
-            <span>{caseStudy.number}</span>
-            <strong>{caseStudy.client}</strong>
-          </button>
-        ))}
-      </nav>
-
       <div className="case-stack__items">
-        {data.caseStudies.items.map((caseStudy, index) => {
+        {selectedCases.map((caseStudy, index) => {
           const caseStyle = {
             "--case-bg": caseStudy.theme.background,
             "--case-fg": caseStudy.theme.foreground,
@@ -124,8 +150,9 @@ export function CaseStudies() {
             <article
               className={`case-stack__item${
                 index === activeCase ? " is-active" : ""
-              }`}
+              }${caseStudy.detail ? " case-stack__item--long" : ""}`}
               data-case-index={index}
+              data-case-number={caseStudy.number}
               key={caseStudy.slug}
               ref={(element) => {
                 caseRefs.current[index] = element;
@@ -171,7 +198,7 @@ export function CaseStudies() {
 
                       <a
                         className="case-stack__link"
-                        href={`#${caseStudy.slug}`}
+                        href={`/case-studies/${caseStudy.slug}`}
                       >
                         View case study
                         <Arrow />
@@ -180,13 +207,29 @@ export function CaseStudies() {
 
                     <div className="case-stack__visual">
                       <div className="case-stack__image">
-                        <img
-                          src={caseStudy.image}
-                          alt={caseStudy.imageAlt}
-                          onError={(event) => {
-                            event.currentTarget.style.display = "none";
-                          }}
-                        />
+                        <button
+                          className="case-stack__image-link"
+                          type="button"
+                          onClick={() =>
+                            setImageViewer({
+                              alt: caseStudy.imageAlt,
+                              src: caseStudy.image,
+                            })
+                          }
+                          aria-label={`Open ${caseStudy.client} image full size`}
+                        >
+                          <img
+                            key={caseStudy.image}
+                            src={caseStudy.image}
+                            alt={caseStudy.imageAlt}
+                            onLoad={(event) => {
+                              event.currentTarget.style.display = "block";
+                            }}
+                            onError={(event) => {
+                              event.currentTarget.style.display = "none";
+                            }}
+                          />
+                        </button>
 
                         <div className="case-stack__placeholder">
                           <span>{caseStudy.client}</span>
@@ -211,12 +254,115 @@ export function CaseStudies() {
 
                     <small>{data.caseStudies.disclaimer}</small>
                   </div>
+
+                  {caseStudy.detail && (
+                    <div className="case-stack__deep-dive" id={caseStudy.slug}>
+                      <div className="case-stack__deep-header">
+                        <span>{caseStudy.detail.eyebrow}</span>
+                        <h4>{caseStudy.detail.title}</h4>
+                        <p>{caseStudy.detail.introduction}</p>
+                      </div>
+
+                      <div className="case-stack__deep-grid">
+                        {caseStudy.detail.sections.map((section) => (
+                          <div key={section.title}>
+                            <span>{section.label}</span>
+                            <h5>{section.title}</h5>
+                            <p>{section.body}</p>
+                          </div>
+                        ))}
+                      </div>
+
+                      <div className="case-stack__screens">
+                        {caseStudy.detail.screenshots.map((screenshot) => {
+                          return (
+                            <figure
+                              className={`case-stack__screen case-stack__screen--${screenshot.type}`}
+                              key={screenshot.src}
+                            >
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  setImageViewer({
+                                    alt: screenshot.alt,
+                                    src: screenshot.src,
+                                  })
+                                }
+                                aria-label={`Open ${screenshot.label} full size`}
+                              >
+                                <img
+                                  key={screenshot.src}
+                                  src={screenshot.src}
+                                  alt={screenshot.alt}
+                                />
+                              </button>
+                              <figcaption>
+                                <span>{screenshot.label}</span>
+                                {screenshot.caption}
+                              </figcaption>
+                            </figure>
+                          );
+                        })}
+                      </div>
+
+                      <div className="case-stack__decision-grid">
+                        {caseStudy.detail.decisions.map((decision) => (
+                          <div key={decision}>
+                            <Arrow />
+                            <span>{decision}</span>
+                          </div>
+                        ))}
+                      </div>
+
+                      <div className="case-stack__journey">
+                        <span>{caseStudy.detail.journey.label}</span>
+                        <p>{caseStudy.detail.journey.body}</p>
+                      </div>
+
+                      <div className="case-stack__takeaway">
+                        <span>{caseStudy.detail.takeaway.label}</span>
+                        <p>{caseStudy.detail.takeaway.body}</p>
+                        <a href="#contact">
+                          Start a post-click project
+                          <Arrow />
+                        </a>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </Container>
             </article>
           );
         })}
       </div>
+
+      {imageViewer &&
+        createPortal(
+          <div className="image-viewer" role="dialog" aria-modal="true">
+            <button
+              className="image-viewer__backdrop"
+              type="button"
+              onClick={() => setImageViewer(null)}
+              aria-label="Close image viewer"
+            />
+            <div className="image-viewer__frame">
+              <button
+                className="image-viewer__close"
+                type="button"
+                onClick={() => setImageViewer(null)}
+                aria-label="Close image viewer"
+              >
+                ×
+              </button>
+              <img
+                key={imageViewer.src}
+                src={imageViewer.src}
+                alt={imageViewer.alt}
+              />
+            </div>
+          </div>,
+          document.body,
+        )}
     </section>
   );
 }

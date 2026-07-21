@@ -65,7 +65,7 @@
   "brands": [
     "IVER",
     "ClickNShip",
-    "Ascense",
+    "Assence",
     "IVERUSA",
     "Veganic"
   ],
@@ -612,6 +612,358 @@
         "image": "/images/cases/east-healing-hero.png",
         "imageAlt": "East Healing collection redesign",
         "featured": false
+      },
+      {
+        "number": "06",
+        "slug": "veganic",
+        "client": "Veganic",
+        "industry": "Single-Product E-commerce / Hair Care",
+        "headline": "A single-product hero built to sell before the scroll.",
+        "summary": "Veganic's homepage needed to turn the first viewport into a compact product pitch: clear promise, product context, ingredients, proof, trust, and a direct path to the PDP.",
+        "problem": "As a single-product store, Veganic could not afford a decorative hero that delayed product consideration. The page needed to quickly explain what the product is, why it matters, and why the next click is worth taking.",
+        "solution": "We structured the hero around a product-first composition, pairing a bold wellness promise with the bottle, ingredient cues, proof markers, trust badges, and a clear product CTA.",
+        "impact": "A first viewport designed to reduce the gap between discovery, trust, product understanding, and PDP intent.",
+        "services": [
+          "Hero Strategy",
+          "Product Storytelling",
+          "CRO",
+          "Responsive Design"
+        ],
+        "technologies": [
+          "Shopify",
+          "Figma",
+          "Responsive Design"
+        ],
+        "metrics": [
+          {
+            "value": "1",
+            "label": "Focused hero product pitch"
+          },
+          {
+            "value": "6K+",
+            "label": "Transformations surfaced early"
+          },
+          {
+            "value": "4",
+            "label": "Trust cues before the PDP"
+          }
+        ],
+        "theme": {
+          "background": "#E7E7C9",
+          "foreground": "#211A16",
+          "accent": "#2FA768"
+        },
+        "image": "/images/cases/veganic-desktop.png?v=20260721",
+        "imageAlt": "Veganic desktop hero strategy",
+        "featured": true,
+        "preview": {
+          "industry": "Single-Product E-commerce / Hair Care",
+          "headline": "Turning a hero banner into a product pitch.",
+          "summary": "We turned Veganic's first viewport into a focused product presentation, combining the offer, ingredients, trust signals, social proof, and a direct path to the PDP.",
+          "image": "/images/cases/veganic-desktop.png?v=20260721",
+          "imageAlt": "Veganic desktop hero screenshot",
+          "imageFit": "contain",
+          "services": [
+            "Hero Strategy",
+            "Product Storytelling",
+            "CRO",
+            "Responsive Design"
+          ]
+        },
+        "detail": {
+          "eyebrow": "VEGANIC CASE STUDY",
+          "title": "From decorative hero to compact product pitch.",
+          "introduction": "Veganic is a single-product hair care store, which means the homepage has one job: move a visitor from first impression to product consideration as quickly and confidently as possible.",
+          "sections": [
+            {
+              "label": "PROJECT INTRODUCTION",
+              "title": "A homepage built around one product decision.",
+              "body": "Instead of treating the hero as a brand billboard, the design makes the product, promise, proof, and CTA visible immediately. The first viewport behaves like a condensed product page above the fold."
+            },
+            {
+              "label": "BRAND CONTEXT",
+              "title": "Natural hair care needs clarity and trust.",
+              "body": "For wellness and hair care shoppers, curiosity is not enough. The page has to explain what the formula does, what is inside it, why it feels credible, and where the customer should go next."
+            },
+            {
+              "label": "THE CHALLENGE",
+              "title": "Single-product stores have less room for vague storytelling.",
+              "body": "If the hero only creates atmosphere, the customer still has to search for the product logic. That adds friction between ad click, homepage arrival, product understanding, and PDP intent."
+            },
+            {
+              "label": "STRATEGIC INSIGHT",
+              "title": "The hero needed to answer PDP-level questions early.",
+              "body": "A single-product hero can carry more conversion responsibility than a standard banner. It should introduce the result, the product, ingredient reasons to believe, social proof, safety cues, and action in one organized composition."
+            },
+            {
+              "label": "THE SOLUTION",
+              "title": "Product-first composition with conversion cues built in.",
+              "body": "The desktop layout pairs a strong wellness headline with a large product card, ingredient visuals, naturalness claims, a satisfaction marker, and a direct CTA. Each element supports the product pitch instead of decorating around it."
+            },
+            {
+              "label": "WHY IT WORKS",
+              "title": "It reduces the distance between discovery and decision.",
+              "body": "Visitors can understand the offer, see the bottle, scan the ingredients, notice trust signals, and choose the next action without waiting for lower sections to do the persuasive work."
+            },
+            {
+              "label": "DESKTOP IMPLEMENTATION",
+              "title": "A split composition that keeps the product in view.",
+              "body": "On desktop, the left side carries the core message and CTA while the right side turns the product image into a proof system: bottle, botanicals, ingredient list, organic badge, natural claim, and zero-chemical reassurance."
+            },
+            {
+              "label": "MOBILE ADAPTATION",
+              "title": "The same story, stacked for thumb-first scanning.",
+              "body": "On mobile, the hierarchy compresses into a vertical pitch: brand, headline, benefit copy, CTA, social proof, and product card. The product remains visually dominant without burying the action."
+            }
+          ],
+          "screenshots": [
+            {
+              "type": "desktop",
+              "label": "Desktop hero",
+              "src": "/images/cases/veganic-desktop.png?v=20260721",
+              "alt": "Veganic desktop homepage hero with product pitch",
+              "caption": "The desktop viewport turns the product visual into a conversion asset, not a secondary decoration."
+            },
+            {
+              "type": "mobile",
+              "label": "Mobile hero",
+              "src": "/images/cases/veganic-mobile.png?v=20260721",
+              "alt": "Veganic mobile homepage hero with product pitch",
+              "caption": "The mobile version preserves the same conversion sequence while stacking the story for faster scanning."
+            }
+          ],
+          "decisions": [
+            "Lead with the product promise before broader brand storytelling.",
+            "Use the product card to combine bottle, ingredients, claims, and reassurance.",
+            "Surface social proof in the first viewport instead of hiding it below the fold.",
+            "Make the CTA a direct bridge from homepage attention to PDP consideration.",
+            "Keep desktop and mobile aligned around the same product-first narrative."
+          ],
+          "journey": {
+            "label": "HOMEPAGE TO PDP JOURNEY",
+            "body": "The hero introduces the product's desired outcome, validates the formula with ingredient and naturalness cues, builds confidence through social proof and safety markers, then sends the visitor toward the PDP with less uncertainty."
+          },
+        "takeaway": {
+            "label": "STRATEGIC TAKEAWAY",
+            "body": "For a single-product store, the hero should not be a decorative entry point. It should behave like the first chapter of the product page, compressing discovery, trust, and consideration into one focused post-click moment."
+          }
+        }
+      },
+      {
+        "number": "07",
+        "slug": "clicknship",
+        "client": "ClickNShip",
+        "industry": "Managed E-commerce / Service Business",
+        "headline": "Turning a complex service into a clear sales journey.",
+        "summary": "ClickNShip needed to explain a high-trust managed e-commerce service without overwhelming first-time visitors. We structured the page as a progressive journey from offer clarity to education, proof, trust, and call booking.",
+        "problem": "The service combines account management, sourcing, listing, pricing, fulfillment, customer service, and eBay retail arbitrage. New visitors needed to understand ownership, transparency, inventory, risk, legitimacy, and the next step.",
+        "solution": "We organized the one-page experience as a guided sales conversation, using a service-led hero, above-the-fold lead capture, educational sections, comparison moments, operational proof, social proof, founder credibility, and repeated call-booking paths.",
+        "impact": "A one-page sales system designed to make a complex service easier to understand and easier to act on.",
+        "services": [
+          "Conversion Strategy",
+          "One-Page Website",
+          "UX Architecture",
+          "Lead Generation"
+        ],
+        "technologies": [
+          "Figma",
+          "Responsive Design",
+          "Sales Page Architecture"
+        ],
+        "metrics": [
+          {
+            "value": "1",
+            "label": "Primary conversion path"
+          },
+          {
+            "value": "10+",
+            "label": "Objections addressed in-page"
+          },
+          {
+            "value": "Book",
+            "label": "Call-focused action system"
+          }
+        ],
+        "theme": {
+          "background": "#EEF3F8",
+          "foreground": "#101923",
+          "accent": "#1F73D8"
+        },
+        "image": "/images/cases/clicknship/01-hero-and-lead-form.png?v=20260721",
+        "imageAlt": "ClickNShip managed eBay store landing page with service benefits and lead form",
+        "featured": true,
+        "preview": {
+          "industry": "Managed E-commerce / Service Business",
+          "headline": "Turning a complex service into a clear sales journey.",
+          "summary": "We structured ClickNShip's one-page website as a progressive sales journey, moving visitors from offer clarity and education to proof, trust, objection handling, and call booking.",
+          "image": "/images/cases/clicknship/01-hero-and-lead-form.png?v=20260721",
+          "imageAlt": "ClickNShip landing page hero and lead form",
+          "imageFit": "contain",
+          "services": [
+            "Conversion Strategy",
+            "One-Page Website",
+            "UX Architecture",
+            "Lead Generation"
+          ]
+        },
+        "detail": {
+          "eyebrow": "CLICKNSHIP CASE STUDY",
+          "title": "A one-page sales journey built around one clear action.",
+          "introduction": "ClickNShip sells one core managed e-commerce service, but the offer requires explanation and trust before a visitor is ready to book a call. The page was structured as a complete sales journey, not a generic corporate website.",
+          "sections": [
+            {
+              "label": "PROJECT INTRODUCTION",
+              "title": "One service, one page, one primary conversion.",
+              "body": "The experience centers the entire site around a single business objective: helping visitors understand ClickNShip's managed eBay retail arbitrage service and confidently move toward booking a call."
+            },
+            {
+              "label": "THE CHALLENGE",
+              "title": "A complex offer that needed immediate clarity.",
+              "body": "Potential customers need to understand what ClickNShip manages, what the client owns, how the model works, whether inventory is required, how transparency is handled, and why booking a call is the right next step."
+            },
+            {
+              "label": "STRATEGIC INSIGHT",
+              "title": "The page needed to behave like a guided sales conversation.",
+              "body": "Because ClickNShip sells one primary service, a focused one-page structure was more appropriate than sending visitors through disconnected pages. Each section answers the next logical question in the decision journey."
+            },
+            {
+              "label": "FIRST VIEWPORT",
+              "title": "Clarity and conversion above the fold.",
+              "body": "The hero combines a direct service-led headline, immediate benefits, a lead form, and a Book a Call path. The form is part of the sales architecture: it reduces the distance between interest and action."
+            },
+            {
+              "label": "EDUCATION",
+              "title": "Teaching the model before asking for commitment.",
+              "body": "The page introduces educational content early so visitors can understand retail arbitrage, the operating model, and the sections that follow without relying on marketing claims alone."
+            },
+            {
+              "label": "PROCESS",
+              "title": "Turning the service into a simple operating flow.",
+              "body": "The service becomes easier to trust when the workflow is visible. Product sourcing, listing and pricing, order fulfillment, and customer service are broken into clear stages."
+            },
+            {
+              "label": "VALUE FRAMEWORK",
+              "title": "Building the offer around the metrics that matter.",
+              "body": "Reviews, rating, and traction turn abstract operational goals into a simple framework that helps visitors understand what the service is designed to improve."
+            },
+            {
+              "label": "DIFFERENTIATION",
+              "title": "Making the difference easy to compare.",
+              "body": "Comparison sections make the positioning concrete by addressing account ownership, fee transparency, contract flexibility, dashboard access, inventory risk, product sourcing, and exit freedom."
+            },
+            {
+              "label": "OBJECTION HANDLING",
+              "title": "Addressing risks before the sales call.",
+              "body": "The page compares traditional inventory operations with retail arbitrage to address concerns around capital tied up in inventory, warehouse costs, shipping responsibility, catalog limits, and operational overhead."
+            },
+            {
+              "label": "PROOF AND TRUST",
+              "title": "Operational proof, client perspective, and founder credibility.",
+              "body": "Dashboard visuals, testimonials, and founder storytelling support legitimacy without making unverified performance claims. The page keeps proof and human trust inside the conversion path."
+            }
+          ],
+          "screenshots": [
+            {
+              "type": "desktop",
+              "label": "Hero and lead capture",
+              "src": "/images/cases/clicknship/01-hero-and-lead-form.png?v=20260721",
+              "alt": "ClickNShip managed eBay store landing page with service benefits and lead form",
+              "caption": "The first viewport introduces the offer, benefits, lead form, and primary call-booking path in one focused entry point."
+            },
+            {
+              "type": "desktop",
+              "label": "Lead form complete",
+              "src": "/images/cases/clicknship/02-lead-form-complete.png?v=20260721",
+              "alt": "ClickNShip call booking form displayed inside the landing page hero",
+              "caption": "The above-the-fold form reduces the distance between qualified interest and action."
+            },
+            {
+              "type": "desktop",
+              "label": "Educational model",
+              "src": "/images/cases/clicknship/03-educational-video.png?v=20260721",
+              "alt": "ClickNShip educational video explaining the managed eBay business model",
+              "caption": "Education appears early to reduce uncertainty before deeper comparison and proof sections."
+            },
+            {
+              "type": "desktop",
+              "label": "Operating process",
+              "src": "/images/cases/clicknship/10-retail-arbitrage-process.png?v=20260721",
+              "alt": "Four-step ClickNShip retail arbitrage service process",
+              "caption": "The workflow is broken into sourcing, listing, fulfillment, and customer service so the service feels easier to understand."
+            },
+            {
+              "type": "desktop",
+              "label": "Value framework",
+              "src": "/images/cases/clicknship/11-three-steps-framework.png?v=20260721",
+              "alt": "ClickNShip framework focused on reviews, rating and traction",
+              "caption": "The page translates operational goals into a simple framework visitors can remember."
+            },
+            {
+              "type": "desktop",
+              "label": "Comparison table",
+              "src": "/images/cases/clicknship/06-industry-comparison-table.png?v=20260721",
+              "alt": "ClickNShip service comparison table showing ownership, transparency and access differences",
+              "caption": "The comparison makes differentiation concrete across ownership, transparency, dashboard access, inventory risk, and flexibility."
+            },
+            {
+              "type": "desktop",
+              "label": "Operational proof",
+              "src": "/images/cases/clicknship/07-proof-in-the-numbers.png?v=20260721",
+              "alt": "Grid of ClickNShip eBay sales and operational dashboard screenshots",
+              "caption": "Operational proof is integrated into the journey as visible context, without claiming guaranteed results."
+            },
+            {
+              "type": "desktop",
+              "label": "Client perspective",
+              "src": "/images/cases/clicknship/08-client-testimonials.png?v=20260721",
+              "alt": "ClickNShip client testimonial cards",
+              "caption": "Testimonials support perceived legitimacy and trust before the call."
+            },
+            {
+              "type": "desktop",
+              "label": "Founder credibility",
+              "src": "/images/cases/clicknship/09-founder-story.png?v=20260721",
+              "alt": "ClickNShip founder Wade Isleem with company story and quote",
+              "caption": "The founder section puts a real person behind a high-trust service."
+            },
+            {
+              "type": "desktop",
+              "label": "Inventory comparison",
+              "src": "/images/cases/clicknship/13-retail-arbitrage-vs-inventory.png?v=20260721",
+              "alt": "Comparison between traditional inventory and retail arbitrage operating models",
+              "caption": "Objection handling explains why the model may reduce certain operational burdens without promising financial outcomes."
+            },
+            {
+              "type": "mobile",
+              "label": "Mobile hero",
+              "src": "/images/cases/clicknship/01-hero-and-lead-form-mobile.png?v=20260721",
+              "alt": "Mobile ClickNShip landing page hero with lead form",
+              "caption": "The mobile version keeps the offer, benefits, and conversion action close together."
+            },
+            {
+              "type": "mobile",
+              "label": "Mobile comparison",
+              "src": "/images/cases/clicknship/06-industry-comparison-table-mobile.png?v=20260721",
+              "alt": "Mobile ClickNShip comparison table",
+              "caption": "The comparison adapts into a portrait layout for smaller screens."
+            }
+          ],
+          "decisions": [
+            "Use one-page architecture for one primary service instead of fragmenting the journey across pages.",
+            "Pair the hero promise with above-the-fold lead capture and a persistent Book a Call action.",
+            "Introduce education before asking visitors to evaluate the offer deeply.",
+            "Use comparison sections to address objections with concrete criteria.",
+            "Integrate operational proof, social proof, and founder credibility before the final action."
+          ],
+          "journey": {
+            "label": "CLARITY TO CALL BOOKING",
+            "body": "The journey moves visitors through clarity, education, differentiation, proof, trust, and action. Each section has a specific role in helping the visitor understand the service before committing to a call."
+          },
+          "takeaway": {
+            "label": "STRATEGIC TAKEAWAY",
+            "body": "When a business sells one complex service, the strongest website is often not the one with the most pages. It is the one that presents the right information in the right order."
+          }
+        }
       }
     ]
   },

@@ -1,13 +1,26 @@
 import { useMemo, useState, type CSSProperties } from "react";
 
-import data from "../data/site-content.json";
 import { Arrow } from "../components/ui/Arrow";
 import { Container } from "../components/ui/Container";
+import { selectedCases } from "../utils/selectedCases";
+
+type CasePreview = {
+  image?: string;
+  imageAlt?: string;
+  imageFit?: "contain";
+  industry: string;
+  headline: string;
+  summary: string;
+  services?: string[];
+};
 
 export function ClientShowcaseSlider() {
-  const featuredCases = data.caseStudies.items;
+  const featuredCases = selectedCases;
   const [activeIndex, setActiveIndex] = useState(0);
   const activeCase = featuredCases[activeIndex];
+  const activePreview = (activeCase.preview ?? activeCase) as CasePreview;
+  const activeImage = activePreview.image ?? activeCase.image;
+  const activeImageAlt = activePreview.imageAlt ?? activeCase.imageAlt;
 
   const activeTheme = useMemo(() => {
     return {
@@ -45,10 +58,20 @@ export function ClientShowcaseSlider() {
         </div>
 
         <div className="client-showcase__slider">
-          <div className="client-showcase__visual">
+          <div
+            className={`client-showcase__visual${
+              activePreview.imageFit === "contain"
+                ? " client-showcase__visual--contain"
+                : ""
+            }`}
+          >
             <img
-              src={activeCase.image}
-              alt={activeCase.imageAlt}
+              key={activeImage}
+              src={activeImage}
+              alt={activeImageAlt}
+              onLoad={(event) => {
+                event.currentTarget.style.display = "block";
+              }}
               onError={(event) => {
                 event.currentTarget.style.display = "none";
               }}
@@ -61,12 +84,18 @@ export function ClientShowcaseSlider() {
           <div className="client-showcase__content">
             <div className="client-showcase__meta">
               <span>{activeCase.number}</span>
-              <span>{activeCase.industry}</span>
+              <span>{activePreview.industry}</span>
             </div>
 
             <span className="client-showcase__client">{activeCase.client}</span>
-            <h3>{activeCase.headline}</h3>
-            <p>{activeCase.summary}</p>
+            <h3>{activePreview.headline}</h3>
+            <p>{activePreview.summary}</p>
+
+            <div className="client-showcase__tags">
+              {(activePreview.services ?? activeCase.services).map((service) => (
+                <span key={service}>{service}</span>
+              ))}
+            </div>
 
             <div className="client-showcase__metrics">
               {activeCase.metrics.map((metric) => (
@@ -76,6 +105,14 @@ export function ClientShowcaseSlider() {
                 </div>
               ))}
             </div>
+
+            <a
+              className="client-showcase__case-link"
+              href={`/case-studies/${activeCase.slug}`}
+            >
+              View case study
+              <Arrow />
+            </a>
 
             <div className="client-showcase__controls">
               <button type="button" onClick={goToPrevious} aria-label="Previous case">

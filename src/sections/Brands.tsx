@@ -2,6 +2,7 @@ import data from "../data/site-content.json";
 import { Container } from "../components/ui/Container";
 
 const brandLogos: Record<string, { src: string; className?: string }> = {
+  Assence: { src: "/images/assence-logo.png", className: "brand-logo--assence" },
   IVER: { src: "/images/iver-logo.jpeg", className: "brand-logo--iver" },
   ClickNShip: { src: "/images/clicknship-logo.jpeg", className: "brand-logo--clicknship" },
   IVERUSA: { src: "/images/iverusa-logo.webp", className: "brand-logo--iverusa" },
