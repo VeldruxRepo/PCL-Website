@@ -7,8 +7,8 @@ type ContactModalProps = {
 };
 
 const contactRecipients = [
-  "erickrodovalhosilveira@gmail.com",
   "postclicklab@gmail.com",
+  "erickrodovalhosilveira@gmail.com",
   "hello@postclicklab.com",
 ];
 
