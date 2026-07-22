@@ -1705,7 +1705,7 @@ svg {
     left: 50%;
     width: 2.6rem;
     height: 2.6rem;
-    transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%);
   }
 
   .problem__outcome strong {
@@ -2281,6 +2281,21 @@ body {
   animation: problemBridgePulse 2.6s ease-in-out infinite;
 }
 
+.problem__bridge svg {
+  width: 1.1rem;
+  height: 1.35rem;
+  display: block;
+  transform: translate(0.05rem, 0.02rem) rotate(-90deg);
+}
+
+.problem__bridge path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 @keyframes problemAccentSweep {
   0%,
   100% {
@@ -2464,6 +2479,10 @@ body {
     animation: problemBridgePulseMobile 2.6s ease-in-out infinite;
   }
 
+  .problem__bridge svg {
+    transform: translate(0.01rem, 0.1rem);
+  }
+
   .scroll-stack__item {
     --stack-radius: 18px;
   }
@@ -2477,14 +2496,14 @@ body {
 @keyframes problemBridgePulseMobile {
   0%,
   100% {
-    transform: translate(-50%, -50%) rotate(90deg) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     box-shadow:
       0 12px 28px rgba(255, 92, 26, 0.24),
       0 0 0 0 rgba(255, 92, 26, 0.18);
   }
 
   50% {
-    transform: translate(-50%, -50%) rotate(90deg) scale(1.06);
+    transform: translate(-50%, -50%) scale(1.06);
     box-shadow:
       0 14px 34px rgba(255, 92, 26, 0.38),
       0 0 0 10px rgba(255, 92, 26, 0);
