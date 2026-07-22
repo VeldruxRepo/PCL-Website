@@ -5031,6 +5031,34 @@ body {
   cursor: pointer;
 }
 
+.contact-form .button:disabled {
+  cursor: wait;
+  opacity: 0.68;
+  transform: none;
+}
+
+.contact-form__status {
+  max-width: none;
+  margin: 0.15rem 0 0;
+  padding: 0.8rem 0.95rem;
+  border: 1px solid rgba(26, 20, 16, 0.12);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.contact-form__status--success {
+  border-color: rgba(46, 176, 108, 0.24);
+  background: rgba(46, 176, 108, 0.1);
+  color: #176f4a;
+}
+
+.contact-form__status--error {
+  border-color: rgba(255, 92, 26, 0.28);
+  background: rgba(255, 92, 26, 0.1);
+  color: var(--accent);
+}
+
 @media (max-width: 620px) {
   .sticky-cta {
     right: 1rem;

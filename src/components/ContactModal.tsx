@@ -1,4 +1,4 @@
-import { useEffect, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { createPortal } from "react-dom";
 
 type ContactModalProps = {
@@ -7,12 +7,14 @@ type ContactModalProps = {
 };
 
 const contactRecipients = [
-  "hello@postclicklab.com",
   "erickrodovalhosilveira@gmail.com",
   "postclicklab@gmail.com",
+  "hello@postclicklab.com",
 ];
 
 export function ContactModal({ isOpen, onClose }: ContactModalProps) {
+  const [submitState, setSubmitState] = useState<"idle" | "sending" | "sent" | "error">("idle");
+
   useEffect(() => {
     if (!isOpen) {
       return;
@@ -39,7 +41,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
     return null;
   }
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const formData = new FormData(event.currentTarget);
@@ -48,34 +50,56 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
     const company = String(formData.get("company") || "");
     const message = String(formData.get("message") || "");
 
-    const subject = encodeURIComponent(`New PCL project inquiry from ${name}`);
-    const body = encodeURIComponent(
-      [
-        `Name: ${name}`,
-        `Email: ${email}`,
-        `Company: ${company}`,
-        "",
-        "Project:",
-        message,
-      ].join("\n"),
-    );
+    setSubmitState("sending");
 
-    window.location.href = `mailto:${contactRecipients.join(",")}?subject=${subject}&body=${body}`;
+    try {
+      const payload = new FormData();
+      payload.append("name", name);
+      payload.append("email", email);
+      payload.append("company", company);
+      payload.append("message", message);
+      payload.append("_captcha", "false");
+      payload.append("_cc", contactRecipients.slice(1).join(","));
+      payload.append("_replyto", email);
+      payload.append("_subject", `New PCL project inquiry from ${name}`);
+
+      const response = await fetch(`https://formsubmit.co/ajax/${contactRecipients[0]}`, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: payload,
+      });
+
+      if (!response.ok) {
+        throw new Error("Contact form request failed");
+      }
+
+      event.currentTarget.reset();
+      setSubmitState("sent");
+    } catch {
+      setSubmitState("error");
+    }
+  };
+
+  const handleClose = () => {
+    setSubmitState("idle");
+    onClose();
   };
 
   return createPortal(
     <div className="contact-modal" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
-      <button className="contact-modal__backdrop" type="button" aria-label="Close contact form" onClick={onClose} />
+      <button className="contact-modal__backdrop" type="button" aria-label="Close contact form" onClick={handleClose} />
 
       <div className="contact-modal__panel">
-        <button className="contact-modal__close" type="button" aria-label="Close contact form" onClick={onClose}>
+        <button className="contact-modal__close" type="button" aria-label="Close contact form" onClick={handleClose}>
           ×
         </button>
 
         <span className="eyebrow eyebrow--accent">START A PROJECT</span>
         <h2 id="contact-modal-title">Tell us what happens after the click.</h2>
         <p>
-          Share the page, funnel, or campaign you want to improve. The message opens in your email app addressed to the PCL team.
+          Share the page, funnel, or campaign you want to improve. Your message goes straight to the PCL team.
         </p>
 
         <form className="contact-form" onSubmit={handleSubmit}>
@@ -99,8 +123,20 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             <textarea name="message" rows={5} required />
           </label>
 
-          <button className="button button--primary" type="submit">
-            Send to PCL
+          {submitState === "sent" && (
+            <p className="contact-form__status contact-form__status--success">
+              Message sent. We will get back to you shortly.
+            </p>
+          )}
+
+          {submitState === "error" && (
+            <p className="contact-form__status contact-form__status--error">
+              Something blocked the send. Confirm the FormSubmit activation email or try again in a moment.
+            </p>
+          )}
+
+          <button className="button button--primary" type="submit" disabled={submitState === "sending"}>
+            {submitState === "sending" ? "Sending..." : "Send to PCL"}
           </button>
         </form>
       </div>
