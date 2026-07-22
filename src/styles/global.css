@@ -448,8 +448,10 @@ svg {
   white-space: nowrap;
 }
 .brand-logo--clicknship {
-  max-width: 10rem;
-  transform: scale(1.18);
+  max-width: 12rem;
+  transform: scale(1.12);
+  filter: none;
+  opacity: 0.82;
 }
 .brand-logo--assence {
   max-width: 12.4rem;
@@ -463,8 +465,9 @@ svg {
   max-width: 11rem;
 }
 .brand-logo--veganic {
-  max-width: 9rem;
-  transform: scale(1.05);
+  max-width: 12rem;
+  max-height: 3.35rem;
+  transform: scale(1.28);
 }
 .pillars {
   padding-block: 0;

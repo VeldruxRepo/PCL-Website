@@ -1,6 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 120" role="img" aria-labelledby="title">
   <title id="title">IVERUSA</title>
-  <rect width="520" height="120" fill="none"/>
-  <text x="146" y="78" text-anchor="middle" fill="#1287EF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="72" font-weight="800" letter-spacing="-3">IVER</text>
-  <text x="348" y="78" text-anchor="middle" fill="none" stroke="#17120F" stroke-width="4" font-family="Inter, Arial, Helvetica, sans-serif" font-size="72" font-weight="800" letter-spacing="-3">USA</text>
+  <text x="310" y="82" text-anchor="middle" fill="#17120F" font-family="Arial Black, Inter, Arial, Helvetica, sans-serif" font-size="82" font-weight="900" letter-spacing="-5">IVERUSA</text>
 </svg>

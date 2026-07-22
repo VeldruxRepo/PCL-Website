@@ -4,9 +4,9 @@ import { Container } from "../components/ui/Container";
 const brandLogos: Record<string, { src: string; className?: string }> = {
   Assence: { src: "/images/logos/assence.svg", className: "brand-logo--assence" },
   IVER: { src: "/images/logos/iver.svg", className: "brand-logo--iver" },
-  ClickNShip: { src: "/images/logos/clicknship.svg", className: "brand-logo--clicknship" },
+  ClickNShip: { src: "/images/logos/clicknship-black.png", className: "brand-logo--clicknship" },
   IVERUSA: { src: "/images/logos/iverusa.svg", className: "brand-logo--iverusa" },
-  Veganic: { src: "/images/logos/veganic.svg", className: "brand-logo--veganic" },
+  Veganic: { src: "/images/logos/veganic.webp", className: "brand-logo--veganic" },
 };
 
 export function Brands() {

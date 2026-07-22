@@ -6,6 +6,12 @@ type ContactModalProps = {
   onClose: () => void;
 };
 
+const contactRecipients = [
+  "hello@postclicklab.com",
+  "erickrodovalhosilveira@gmail.com",
+  "postclicklab@gmail.com",
+];
+
 export function ContactModal({ isOpen, onClose }: ContactModalProps) {
   useEffect(() => {
     if (!isOpen) {
@@ -54,7 +60,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
       ].join("\n"),
     );
 
-    window.location.href = `mailto:hello@postclicklab.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${contactRecipients.join(",")}?subject=${subject}&body=${body}`;
   };
 
   return createPortal(
@@ -69,7 +75,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
         <span className="eyebrow eyebrow--accent">START A PROJECT</span>
         <h2 id="contact-modal-title">Tell us what happens after the click.</h2>
         <p>
-          Share the page, funnel, or campaign you want to improve. The message opens in your email app addressed to hello@postclicklab.com.
+          Share the page, funnel, or campaign you want to improve. The message opens in your email app addressed to the PCL team.
         </p>
 
         <form className="contact-form" onSubmit={handleSubmit}>
@@ -94,7 +100,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
           </label>
 
           <button className="button button--primary" type="submit">
-            Send to hello@postclicklab.com
+            Send to PCL
           </button>
         </form>
       </div>
