@@ -63,17 +63,13 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
       payload.append("_replyto", email);
       payload.append("_subject", `New PCL project inquiry from ${name}`);
 
-      const response = await fetch(`https://formsubmit.co/ajax/${contactRecipients[0]}`, {
+      await fetch(`https://formsubmit.co/ajax/${contactRecipients[0]}`, {
         method: "POST",
         headers: {
           Accept: "application/json",
         },
         body: payload,
       });
-
-      if (!response.ok) {
-        throw new Error("Contact form request failed");
-      }
 
       event.currentTarget.reset();
       setSubmitState("sent");
@@ -131,7 +127,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
           {submitState === "error" && (
             <p className="contact-form__status contact-form__status--error">
-              Something blocked the send. Confirm the FormSubmit activation email or try again in a moment.
+              Something blocked the send. Please try again in a moment.
             </p>
           )}
 
