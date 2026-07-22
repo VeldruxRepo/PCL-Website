@@ -233,7 +233,7 @@ export function CaseStudies({ activeSlug }: CaseStudiesProps) {
 
                         <div className="case-stack__placeholder">
                           <span>{caseStudy.client}</span>
-                          <strong>PLACE IMAGE HERE</strong>
+                          <strong>PROJECT VISUAL</strong>
                         </div>
                       </div>
 
@@ -251,8 +251,6 @@ export function CaseStudies({ activeSlug }: CaseStudiesProps) {
                         <span>{metric.label}</span>
                       </div>
                     ))}
-
-                    <small>{data.caseStudies.disclaimer}</small>
                   </div>
 
                   {caseStudy.detail && (

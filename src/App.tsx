@@ -19,6 +19,7 @@ import { Impact } from "./sections/Impact";
 import { Faq } from "./sections/Faq";
 import { FinalCta } from "./sections/FinalCta";
 import { Footer } from "./sections/Footer";
+import { ReviewsPage } from "./sections/ReviewsPage";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -87,6 +88,7 @@ export default function App() {
     ? currentPath.split("/").filter(Boolean).at(-1)
     : undefined;
   const isWorkPage = currentPath === "/work" || Boolean(caseStudySlug);
+  const isReviewsPage = currentPath === "/reviews";
 
   return (
     <>
@@ -103,7 +105,9 @@ export default function App() {
       >
         <Header />
 
-        {isWorkPage ? (
+        {isReviewsPage ? (
+          <ReviewsPage />
+        ) : isWorkPage ? (
           <main className="work-page">
             <CaseStudies activeSlug={caseStudySlug} />
             <FinalCta />

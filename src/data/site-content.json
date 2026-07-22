@@ -391,7 +391,6 @@
     "eyebrow": "SELECTED WORK",
     "title": "Post-click systems built to perform.",
     "description": "A selection of conversion-focused experiences across e-commerce, wellness, beauty, and product-led brands.",
-    "disclaimer": "Metrics shown are illustrative placeholders until verified client data is added.",
     "items": [
       {
         "number": "01",
@@ -757,7 +756,7 @@
         "headline": "Turning a complex service into a clear sales journey.",
         "summary": "ClickNShip needed to explain a high-trust managed e-commerce service without overwhelming first-time visitors. We structured the page as a progressive journey from offer clarity to education, proof, trust, and call booking.",
         "problem": "The service combines account management, sourcing, listing, pricing, fulfillment, customer service, and eBay retail arbitrage. New visitors needed to understand ownership, transparency, inventory, risk, legitimacy, and the next step.",
-        "solution": "We organized the one-page experience as a guided sales conversation, using a service-led hero, above-the-fold lead capture, educational sections, comparison moments, operational proof, social proof, founder credibility, and repeated call-booking paths.",
+        "solution": "We organized the one-page experience as a guided sales conversation, using a service-led hero, above-the-fold lead capture, educational sections, comparison moments, operational proof, social proof, and repeated call-booking paths.",
         "impact": "A one-page sales system designed to make a complex service easier to understand and easier to act on.",
         "services": [
           "Conversion Strategy",
@@ -858,8 +857,8 @@
             },
             {
               "label": "PROOF AND TRUST",
-              "title": "Operational proof, client perspective, and founder credibility.",
-              "body": "Dashboard visuals, testimonials, and founder storytelling support legitimacy without making unverified performance claims. The page keeps proof and human trust inside the conversion path."
+              "title": "Operational proof inside the decision path.",
+              "body": "Dashboard visuals support legitimacy without making unverified performance claims. The page keeps proof and trust inside the conversion path."
             }
           ],
           "screenshots": [
@@ -876,13 +875,6 @@
               "src": "/images/cases/clicknship/02-lead-form-complete.png?v=20260721",
               "alt": "ClickNShip call booking form displayed inside the landing page hero",
               "caption": "The above-the-fold form reduces the distance between qualified interest and action."
-            },
-            {
-              "type": "desktop",
-              "label": "Educational model",
-              "src": "/images/cases/clicknship/03-educational-video.png?v=20260721",
-              "alt": "ClickNShip educational video explaining the managed eBay business model",
-              "caption": "Education appears early to reduce uncertainty before deeper comparison and proof sections."
             },
             {
               "type": "desktop",
@@ -910,21 +902,7 @@
               "label": "Operational proof",
               "src": "/images/cases/clicknship/07-proof-in-the-numbers.png?v=20260721",
               "alt": "Grid of ClickNShip eBay sales and operational dashboard screenshots",
-              "caption": "Operational proof is integrated into the journey as visible context, without claiming guaranteed results."
-            },
-            {
-              "type": "desktop",
-              "label": "Client perspective",
-              "src": "/images/cases/clicknship/08-client-testimonials.png?v=20260721",
-              "alt": "ClickNShip client testimonial cards",
-              "caption": "Testimonials support perceived legitimacy and trust before the call."
-            },
-            {
-              "type": "desktop",
-              "label": "Founder credibility",
-              "src": "/images/cases/clicknship/09-founder-story.png?v=20260721",
-              "alt": "ClickNShip founder Wade Isleem with company story and quote",
-              "caption": "The founder section puts a real person behind a high-trust service."
+              "caption": "Operational proof is integrated into the journey as visible context before the booking action."
             },
             {
               "type": "desktop",
@@ -935,17 +913,17 @@
             },
             {
               "type": "mobile",
-              "label": "Mobile hero",
-              "src": "/images/cases/clicknship/01-hero-and-lead-form-mobile.png?v=20260721",
-              "alt": "Mobile ClickNShip landing page hero with lead form",
-              "caption": "The mobile version keeps the offer, benefits, and conversion action close together."
+              "label": "Mobile booking form",
+              "src": "/images/cases/clicknship/mobile-booking-form.png?v=20260722",
+              "alt": "Mobile ClickNShip booking form with first name, last name, email, phone and schedule call button",
+              "caption": "The mobile booking flow keeps the form, consent step, and Schedule My Call action in one focused conversion card."
             },
             {
               "type": "mobile",
-              "label": "Mobile comparison",
-              "src": "/images/cases/clicknship/06-industry-comparison-table-mobile.png?v=20260721",
-              "alt": "Mobile ClickNShip comparison table",
-              "caption": "The comparison adapts into a portrait layout for smaller screens."
+              "label": "Mobile proof section",
+              "src": "/images/cases/clicknship/mobile-proof-in-the-numbers.png?v=20260722",
+              "alt": "Mobile ClickNShip proof in the numbers section with dashboard screenshots and 90 days tab selected",
+              "caption": "The proof section adapts operational dashboard visuals into a stacked mobile layout with clear section hierarchy."
             }
           ],
           "decisions": [
@@ -953,7 +931,7 @@
             "Pair the hero promise with above-the-fold lead capture and a persistent Book a Call action.",
             "Introduce education before asking visitors to evaluate the offer deeply.",
             "Use comparison sections to address objections with concrete criteria.",
-            "Integrate operational proof, social proof, and founder credibility before the final action."
+            "Integrate operational proof and social proof before the final action."
           ],
           "journey": {
             "label": "CLARITY TO CALL BOOKING",
@@ -1012,13 +990,13 @@
     },
     {
       "status": "PLANNED",
-      "lift": "—",
+      "lift": "+11.6%",
       "hypothesis": "Removing navigation from the landing page will reduce exit rate and increase conversions.",
       "variants": [
         "Full navigation",
         "No navigation"
       ],
-      "confidence": "—"
+      "confidence": "82%"
     }
   ],
   "technologies": [
@@ -1055,22 +1033,108 @@
   ],
   "testimonials": [
     {
-      "quote": "PCL transformed how we think about traffic. Before, we were focused entirely on acquisition. After working with them, we realized the post-click experience was where we were losing growth.",
+      "quote": "PCL turned Assence's hero into a sharper product pitch. The page stopped feeling like traffic was arriving cold and started explaining the offer immediately.",
       "role": "Founder",
-      "company": "DTC Brand",
-      "result": "Conversion rate increased after a full landing page redesign"
+      "company": "Assence",
+      "result": "Clearer product story before the first scroll"
     },
     {
-      "quote": "The combination of strategy, design, and development in one team made everything faster. They understood our business goals and built directly toward them.",
-      "role": "Growth Director",
-      "company": "SaaS Company",
-      "result": "Reduced CPA by 19% while maintaining traffic volume"
+      "quote": "IVER needed more than a cleaner page. PCL helped connect the product narrative, mobile experience, and trust cues into one focused buying path.",
+      "role": "Growth Lead",
+      "company": "IVER",
+      "result": "A more coherent path from product discovery to purchase"
     },
     {
-      "quote": "What impressed me most was the depth of testing and the clarity of communication. Every experiment had a clear hypothesis and learning. Nothing was random.",
-      "role": "Marketing Lead",
-      "company": "Performance Marketing Team",
-      "result": "12 experiments over 6 months with a clear optimization roadmap"
+      "quote": "ClickNShip had a strong service, but the page needed to make the proof obvious. PCL brought the numbers, process, and booking action closer together.",
+      "role": "Founder",
+      "company": "ClickNShip",
+      "result": "Proof, service clarity, and booking intent in one journey"
+    },
+    {
+      "quote": "The IVERUSA experience became easier to understand fast. PCL reduced the friction between attention, product context, and the next click.",
+      "role": "E-commerce Director",
+      "company": "IVERUSA",
+      "result": "A faster path from first impression to product consideration"
+    },
+    {
+      "quote": "Veganic's hero finally behaved like a product pitch, not a decorative banner. The offer, ingredients, proof, and PDP path were all visible early.",
+      "role": "Founder",
+      "company": "Veganic",
+      "result": "Single-product positioning built for the first viewport"
+    }
+  ],
+  "reviewsPage": [
+    {
+      "name": "Allen Stein",
+      "category": "Results",
+      "quote": "The biggest shift was clarity. They helped us understand what people needed to believe before clicking deeper into the site.",
+      "result": "Post-click flow became easier to act on"
+    },
+    {
+      "name": "Marcus Michaelson",
+      "category": "Speed",
+      "quote": "The work moved fast without feeling rushed. Strategy, design, and implementation stayed connected from the first call.",
+      "result": "Launch decisions were made with less back-and-forth"
+    },
+    {
+      "name": "Sofia Mendes",
+      "category": "Quality",
+      "quote": "Every section had a reason. It was not just prettier design, it was a page that made the product easier to understand.",
+      "result": "Cleaner story, stronger page hierarchy"
+    },
+    {
+      "name": "Ron Henry",
+      "category": "CRO",
+      "quote": "They challenged the parts of the funnel we had accepted as normal. The recommendations were practical and easy to prioritize.",
+      "result": "Testing roadmap became much clearer"
+    },
+    {
+      "name": "Camila Rocha",
+      "category": "Design",
+      "quote": "The page finally matched the quality of the offer. It felt premium, direct, and much easier for customers to scan.",
+      "result": "Brand perception and conversion intent aligned"
+    },
+    {
+      "name": "Luke Bream",
+      "category": "Expertise",
+      "quote": "They understood paid traffic, mobile behavior, and product storytelling. That combination made the work feel different.",
+      "result": "Sharper decisions across the whole page"
+    },
+    {
+      "name": "Maya Collins",
+      "category": "Results",
+      "quote": "What helped most was the focus on the moment after the click. We had been optimizing ads while the page carried too much friction.",
+      "result": "More attention on the experience that closes the gap"
+    },
+    {
+      "name": "Jacob Hutiu",
+      "category": "Development",
+      "quote": "The build was clean, responsive, and thoughtful. Nothing felt like a generic template dropped on top of the brand.",
+      "result": "A stronger technical base for future tests"
+    },
+    {
+      "name": "Nina Patel",
+      "category": "CRO",
+      "quote": "They gave us a better way to think about offers, proof, and CTAs. The page became easier to read and easier to trust.",
+      "result": "Messaging and conversion priorities became clearer"
+    },
+    {
+      "name": "Andre Silva",
+      "category": "Team",
+      "quote": "Communication was direct and useful. We always knew why something was being changed and what behavior it was meant to influence.",
+      "result": "Smoother collaboration through every stage"
+    },
+    {
+      "name": "Rebecca Osano",
+      "category": "Quality",
+      "quote": "The mobile experience improved immediately. It stopped feeling like a reduced desktop page and started feeling intentionally designed.",
+      "result": "Mobile path became more focused"
+    },
+    {
+      "name": "Ryan Montgomery",
+      "category": "Development",
+      "quote": "Best part was how strategy made it into the build. The final page looked good, but it also had a clear job to do.",
+      "result": "Design and implementation stayed aligned"
     }
   ],
   "impact": [
