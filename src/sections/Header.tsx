@@ -12,7 +12,10 @@ export function Header() {
   return (
     <>
       <div className="announcement">
-        <span>{data.announcement.text} </span>
+        <span>
+          {data.announcement.text}
+          <Arrow />
+        </span>
         <a href={data.announcement.link.href}>{data.announcement.link.label}</a>
       </div>
       <header className={`site-header${isMenuOpen ? " is-menu-open" : ""}`}>

@@ -185,7 +185,22 @@ export function Hero() {
                     aria-hidden="true"
                   >
                     <span />
-                    <b>→</b>
+                    <b>
+                      <svg
+                        aria-hidden="true"
+                        fill="none"
+                        focusable="false"
+                        viewBox="0 0 18 10"
+                      >
+                        <path
+                          d="M1 5h15M12.5 1.5 16 5l-3.5 3.5"
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
+                        />
+                      </svg>
+                    </b>
                   </span>
                 ) : null}
               </div>

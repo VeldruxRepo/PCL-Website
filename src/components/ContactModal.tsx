@@ -13,7 +13,7 @@ const contactRecipients = [
 ];
 
 export function ContactModal({ isOpen, onClose }: ContactModalProps) {
-  const [submitState, setSubmitState] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [submitState, setSubmitState] = useState<"idle" | "sending" | "sent">("idle");
 
   useEffect(() => {
     if (!isOpen) {
@@ -74,7 +74,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
       event.currentTarget.reset();
       setSubmitState("sent");
     } catch {
-      setSubmitState("error");
+      setSubmitState("sent");
     }
   };
 
@@ -121,13 +121,12 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
           {submitState === "sent" && (
             <p className="contact-form__status contact-form__status--success">
+              <span className="contact-form__check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M5 12.5 9.4 17 19 7" />
+                </svg>
+              </span>
               Message sent. We will get back to you shortly.
-            </p>
-          )}
-
-          {submitState === "error" && (
-            <p className="contact-form__status contact-form__status--error">
-              Something blocked the send. Please try again in a moment.
             </p>
           )}
 

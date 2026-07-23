@@ -251,7 +251,22 @@ export function Process() {
 
               <strong>{nextStep.title}</strong>
 
-              <i>↓</i>
+              <i>
+                <svg
+                  aria-hidden="true"
+                  fill="none"
+                  focusable="false"
+                  viewBox="0 0 12 16"
+                >
+                  <path
+                    d="M6 1v13M1.5 9.5 6 14l4.5-4.5"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.6"
+                  />
+                </svg>
+              </i>
             </button>
           </div>
         </div>

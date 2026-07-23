@@ -144,6 +144,16 @@ svg {
     400 0.72rem/1.5 var(--mono-font);
   letter-spacing: 0.04em;
 }
+.announcement span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.announcement svg {
+  width: 0.9em;
+  height: 0.9em;
+  flex: 0 0 auto;
+}
 .announcement a {
   color: var(--accent);
   text-decoration: underline;
@@ -756,10 +766,19 @@ svg {
   gap: 2rem;
 }
 .text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   color: var(--accent);
   font-size: 0.9rem;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
+}
+
+.text-link svg {
+  width: 0.95em;
+  height: 0.95em;
+  flex: 0 0 auto;
 }
 .service-list {
   margin-top: 4rem;
@@ -1974,6 +1993,10 @@ svg {
   position: absolute;
   right: 0.2rem;
   z-index: 2;
+  width: 1.15rem;
+  height: 1rem;
+  display: grid;
+  place-items: center;
   color: currentColor;
   font-size: 1rem;
   font-weight: 600;
@@ -1981,6 +2004,12 @@ svg {
   transition:
     color 420ms ease,
     transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.journey__line b svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .journey__line--active {
@@ -3574,6 +3603,12 @@ body {
   animation: processNextBounce 1.8s ease-in-out infinite;
 }
 
+.process-loop__next i svg {
+  width: 0.9rem;
+  height: 1rem;
+  display: block;
+}
+
 @keyframes processMouseMove {
   0%,
   100% {
@@ -4490,6 +4525,12 @@ body {
   animation: compareBridgePulse 2.6s ease-in-out infinite;
 }
 
+.compare-grid__bridge svg {
+  width: 1.15rem;
+  height: 0.8rem;
+  display: block;
+}
+
 @keyframes compareAccentSweep {
   0%,
   100% {
@@ -5040,7 +5081,10 @@ body {
 .contact-form__status {
   max-width: none;
   margin: 0.15rem 0 0;
-  padding: 0.8rem 0.95rem;
+  padding: 0.85rem 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   border: 1px solid rgba(26, 20, 16, 0.12);
   font-size: 0.82rem;
   font-weight: 700;
@@ -5053,18 +5097,66 @@ body {
   color: #176f4a;
 }
 
-.contact-form__status--error {
-  border-color: rgba(255, 92, 26, 0.28);
-  background: rgba(255, 92, 26, 0.1);
-  color: var(--accent);
+.contact-form__check {
+  width: 1.9rem;
+  height: 1.9rem;
+  flex: 0 0 1.9rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #176f4a;
+  color: var(--bg);
+  animation: contactCheckPop 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.contact-form__check svg {
+  width: 1.08rem;
+  height: 1.08rem;
+}
+
+.contact-form__check path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 24;
+  stroke-dashoffset: 24;
+  animation: contactCheckDraw 420ms ease-out 170ms forwards;
+}
+
+@keyframes contactCheckPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.45);
+  }
+
+  70% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes contactCheckDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @media (max-width: 620px) {
   .sticky-cta {
     right: 1rem;
-    bottom: 1rem;
-    left: 1rem;
-    width: auto;
+    bottom: calc(1rem + env(safe-area-inset-bottom));
+    left: auto;
+    min-height: 2.7rem;
+    padding: 0 1rem;
+    font-size: 0.76rem;
+    box-shadow: 0 14px 34px rgba(255, 92, 26, 0.22);
   }
 
   .contact-modal {
@@ -5113,12 +5205,13 @@ body {
     width: max-content;
     display: flex !important;
     grid-template-columns: none;
-    gap: 0.75rem;
+    gap: 0;
     animation: mobileMarquee 18s linear infinite;
   }
 
   .brands__item,
   .brands__item[aria-hidden="true"] {
+    margin-right: 0.75rem;
     min-height: 4.75rem;
     flex: 0 0 12rem;
     display: grid;
@@ -5348,5 +5441,37 @@ body {
   .testimonial-grid {
     animation: none;
     transform: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero__grid {
+    min-height: 0;
+    align-items: start;
+    gap: 1.15rem;
+    padding-block: 2.1rem 0.35rem;
+  }
+
+  .hero h1 {
+    margin-block: 0.65rem 1.1rem;
+  }
+
+  .hero__description {
+    margin-bottom: 1.25rem;
+    line-height: 1.65;
+  }
+
+  .journey {
+    margin-bottom: 1.75rem;
+    padding-top: 40px;
+    padding-bottom: 1rem;
+  }
+
+  .brands {
+    padding-block: 1.85rem 1.85rem;
+  }
+
+  .brands__inner {
+    gap: 0.9rem;
   }
 }
