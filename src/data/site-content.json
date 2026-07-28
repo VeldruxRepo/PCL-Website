@@ -212,9 +212,9 @@
     },
     {
       "number": "05",
-      "title": "Shopify Development",
+      "title": "Website Development",
       "category": "BUILD",
-      "description": "Custom storefronts, sections, templates, integrations, and conversion systems for Shopify.",
+      "description": "Custom websites, sections, templates, integrations, and conversion systems built around performance.",
       "outcome": "Storefronts built to scale",
       "icon": "shopify",
       "featured": true,
@@ -449,7 +449,7 @@
         "services": [
           "CRO",
           "Bundle UX",
-          "Shopify Development",
+          "Website Development",
           "A/B Testing"
         ],
         "technologies": [
@@ -494,7 +494,7 @@
           "Landing Page Design",
           "CRO",
           "Messaging",
-          "Shopify Development"
+          "Website Development"
         ],
         "technologies": [
           "Shopify",
@@ -537,7 +537,7 @@
         "services": [
           "UX/UI Design",
           "CRO",
-          "Shopify Development",
+          "Website Development",
           "Product Strategy"
         ],
         "technologies": [
@@ -580,7 +580,7 @@
         "impact": "A more intuitive way to browse, compare, and find the right product.",
         "services": [
           "Collection UX",
-          "Shopify Development",
+          "Website Development",
           "CRO",
           "Information Architecture"
         ],
