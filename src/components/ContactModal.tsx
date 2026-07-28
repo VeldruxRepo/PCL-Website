@@ -75,7 +75,7 @@ const formSteps: FormStep[] = [
     id: "contact",
     eyebrow: "START HERE",
     title: "First, where can we reach you?",
-    helper: "Add the essentials before we qualify the project. This saves your lead even if you leave before finishing.",
+    helper: "Share your contact details so we can understand the project and follow up with the right next step.",
   },
   {
     id: "services",
